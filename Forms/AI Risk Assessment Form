@@ -1,0 +1,74 @@
+
+{
+  "system_details": {
+    "ai_system_name": "",
+    "requestors_champions": "",
+    "businesses": "",
+    "departments": "",
+    "locations": "",
+    "anticipated_users": "",
+    "ai_system_description": "",
+    "link_to_terms_conditions": "",
+    "pilot_tests": "",
+    "prospective_use_case": "",
+    "final_use_case": ""
+  },
+  "data_management": {
+    "data_sets_used": "",
+    "underlying_data_storage": "",
+    "tdy_data_storage": "",
+    "integrated_systems_data_flow": "",
+    "underlying_models_used": ""
+  },
+  "user_validation": {
+    "external_output_use": "",
+    "product_service_integration": "",
+    "employment_usage": "",
+    "human_review_process": "",
+    "ai_content_marking": "",
+    "feedback_reporting_process": ""
+  },
+  "potential_risks": {
+    "bias_fairness": {
+      "risk_description": "",
+      "likelihood": "",
+      "impact": "",
+      "pilot_results": "",
+      "mitigation_strategies": ""
+    },
+    "third_party_ip": {
+      "risk_description": "",
+      "likelihood": "",
+      "impact": "",
+      "pilot_results": "",
+      "mitigation_strategies": ""
+    },
+    "data_privacy_confidentiality": {
+      "risk_description": "",
+      "likelihood": "",
+      "impact": "",
+      "mitigation_strategies": ""
+    },
+    "cybersecurity": {
+      "risk_description": "",
+      "likelihood": "",
+      "impact": "",
+      "mitigation_strategies": ""
+    },
+    "accuracy_reliability_safety": {
+      "risk_description": "",
+      "likelihood": "",
+      "impact": "",
+      "pilot_results": "",
+      "mitigation_strategies": ""
+    }
+  },
+  "assessment_results": {
+    "efficiency_productivity_improvement": "",
+    "risks_mitigated": "",
+    "approved_for_adoption": ""
+  },
+  "implementation_conditions": {
+    "standard_instructions": ""
+  }
+}
