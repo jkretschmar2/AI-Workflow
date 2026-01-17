@@ -1,0 +1,2273 @@
+{
+  "fieldOptions": {
+    "category": [
+      {
+        "value": "1. Product Support",
+        "description": "AI for product documentation, technical assistance, and product-related knowledge (e.g., product guides, troubleshooting)"
+      },
+      {
+        "value": "2. Customer Support",
+        "description": "AI for customer service, support chatbots, and customer-facing assistance"
+      },
+      {
+        "value": "3. Code & Development",
+        "description": "AI for software development: code completion, review, debugging, and DevOps (e.g., GitHub Copilot, Tabnine, Amazon CodeWhisperer)"
+      },
+      {
+        "value": "4. Sales & Marketing Content",
+        "description": "AI for marketing content, sales materials, images, video, and multimedia (e.g., Jasper AI, Midjourney, Synthesia, HeyGen)"
+      },
+      {
+        "value": "5. Data & Analytics",
+        "description": "AI for data analysis, insights, business intelligence, and predictive modeling (e.g., Tableau AI, Databricks, Power BI Copilot)"
+      },
+      {
+        "value": "6. AI in Workflow",
+        "description": "AI embedded in day-to-day work: emails, meetings, documents, and task automation (e.g., Microsoft Copilot for M365, Otter.ai, Grammarly)"
+      },
+      {
+        "value": "7. Research & Knowledge",
+        "description": "AI for information retrieval, research, documentation, and knowledge management (e.g., Claude, Perplexity, Notion AI)"
+      },
+      {
+        "value": "8. Security & Governance",
+        "description": "AI for security, compliance monitoring, risk management, and threat detection (e.g., Microsoft Security Copilot, Darktrace)"
+      }
+    ],
+    "typeOfSolution": [
+      {
+        "value": "1. AI Platform",
+        "description": "Commercial AI platform or service (e.g., Claude, ChatGPT, Copilot, Gemini)",
+        "categoryMapping": null
+      },
+      {
+        "value": "2. AI Agent",
+        "description": "Autonomous or semi-autonomous AI agent for task completion",
+        "categoryMapping": null
+      },
+      {
+        "value": "3. Product API Integration",
+        "description": "AI integrated into existing products via API or embedded systems",
+        "categoryMapping": "1. Product Support"
+      },
+      {
+        "value": "4. AI Chatbot Agent",
+        "description": "AI chatbot agent for customer-facing interactions and support",
+        "categoryMapping": "2. Customer Support"
+      }
+    ],
+    "status": [
+      {
+        "value": "0. Idea Created",
+        "description": "Initial idea captured; not yet submitted as formal request"
+      },
+      {
+        "value": "1. Request Phase",
+        "description": "Initial request submitted; awaiting review"
+      },
+      {
+        "value": "2. Interest Phase",
+        "description": "AI Board reviewing interest from business units"
+      },
+      {
+        "value": "3. Demo Phase",
+        "description": "Vendor demo scheduled with IT, Security, and stakeholders"
+      },
+      {
+        "value": "4. Ideation",
+        "description": "Concept stage; exploring feasibility and requirements"
+      },
+      {
+        "value": "5. Pilot Development",
+        "description": "Actively being built; development work in progress for pilot"
+      },
+      {
+        "value": "6. Pilot Phase",
+        "description": "Limited deployment for testing; being evaluated before full rollout"
+      },
+      {
+        "value": "7. Formal Request Phase",
+        "description": "Business case development and leadership review for approval"
+      },
+      {
+        "value": "8. Production Development",
+        "description": "Approved for production; development work in progress"
+      },
+      {
+        "value": "9. Implementation Phase",
+        "description": "Architecture review, procurement, and deployment in progress"
+      },
+      {
+        "value": "10. Active",
+        "description": "Tool is fully deployed and available for use across the organization"
+      },
+      {
+        "value": "11. On Hold",
+        "description": "Temporarily paused due to resource constraints, dependencies, or reprioritization"
+      },
+      {
+        "value": "12. Deprecated",
+        "description": "Tool is no longer recommended; users should migrate to alternatives"
+      },
+      {
+        "value": "13. Sunset",
+        "description": "Tool/project being phased out; will be decommissioned"
+      },
+      {
+        "value": "14. Cancelled",
+        "description": "Project terminated; will not proceed to completion"
+      },
+      {
+        "value": "15. Unknown",
+        "description": "Status is unclear or not yet determined"
+      }
+    ],
+    "vendor": {
+      "type": "text",
+      "description": "Free-text field for vendor/provider name"
+    },
+    "championOwner": {
+      "type": "lookup",
+      "source": "SharePoint",
+      "listName": "AI Champions",
+      "description": "Lookup field - values populated from SharePoint AI Champions list"
+    },
+    "businessgroup": [
+      {
+        "id": "GRP-01",
+        "value": "T&I Group",
+        "description": "Technology & Imaging Group",
+        "parentId": "ES-01"
+      },
+      {
+        "id": "GRP-02",
+        "value": "DALSA/e2v Group",
+        "description": "DALSA and e2v combined group",
+        "parentId": "ES-01"
+      },
+      {
+        "id": "GRP-03",
+        "value": "FLIR",
+        "description": "FLIR Systems",
+        "parentId": "ES-01"
+      },
+      {
+        "id": "GRP-04",
+        "value": "Marine Instrumentation",
+        "description": "Marine Instrumentation group",
+        "parentId": "ES-02"
+      },
+      {
+        "id": "GRP-05",
+        "value": "Environmental & Electronic Measurement Instrumentation (EEMI)",
+        "description": "EEMI group",
+        "parentId": "ES-02"
+      },
+      {
+        "id": "GRP-06",
+        "value": "Defense Electronics",
+        "description": "Defense Electronics group",
+        "parentId": "ES-03"
+      },
+      {
+        "id": "GRP-07",
+        "value": "Aerospace",
+        "description": "Aerospace group",
+        "parentId": "ES-03"
+      },
+      {
+        "id": "GRP-08",
+        "value": "Engineered Systems",
+        "description": "Engineered Systems group",
+        "parentId": "ES-04"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "toolId": "TL001",
+      "origId": "AP163",
+      "oldSharePointId": "163",
+      "sysIdSNOW": null,
+      "toolName": "Deltek Dela AI",
+      "descriptionOfTool": "Deltek Dela is Deltek’s AI‑powered assistant designed to provide insights, summaries, and explanations of project and financial performance data across Deltek platforms.",
+      "descriptionOfUse": "Streamline interaction with Costpoint across all site roles, increase actionable reporting, and reduce lead time for information.\nDela AI provides automated smart content and summaries from our vast ERP data. Additionally, Deltek’s integrated \"Copilot‑like\" AI‑powered digital assistant, Ask Dela, enables plain‑language querying of project data, purchase requisitions / PO status, and labor and material variances, reducing reliance on manual data exports, manipulation, and individual expertise.",
+      "activityPlanned": "Explore potential for integration of this AI plug-in to Costpoint",
+      "enterpriseCode": "Engineered Systems",
+      "category": "5. Data & Analytics",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Deltek",
+      "status": "10. Active",
+      "championOwner": "Adam.Grillo@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.deltek.com/en/innovation/dela-ai",
+      "ToolImageURL": null,
+      "useCases": [
+        "Finance",
+        "Automation of Activity"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "00 - Idea",
+        "pipelineStatus": "99 - N/A - Uses Approved Tool"
+      }
+    },
+    {
+      "toolId": "TL002",
+      "origId": "AP158",
+      "oldSharePointId": "158",
+      "sysIdSNOW": null,
+      "toolName": "Programming with GitHub Copilot",
+      "descriptionOfTool": "Internal trainings and work instructions for usage of AI in software development processes should be set up to bring the developers directly to an efficient working level.",
+      "descriptionOfUse": "Main purpose is to ensure that all developers are using AI efficiently during their implementation work. We want to avoid that each developer explores the AI features on his/her own. Using proper internal trainings and work instructions we estimate that productivity in software development department can be increased by at least 20%. ",
+      "activityPlanned": "Creating internal trainings and work instructions",
+      "enterpriseCode": "Engineered Systems",
+      "category": "3. Code & Development",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "GitHub",
+      "status": "9. Implementation Phase",
+      "championOwner": "Wolfram.Ehnert@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://github.com/features/copilot",
+      "ToolImageURL": null,
+      "useCases": [
+        "Software Development",
+        "Code Generation",
+        "Increased Throughput"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "40 - Implementation",
+        "pipelineStatus": "07 – Implementation (approved)"
+      }
+    },
+    {
+      "toolId": "TL003",
+      "origId": "AP142",
+      "oldSharePointId": "142",
+      "sysIdSNOW": null,
+      "toolName": "Ollama",
+      "descriptionOfTool": "Ollama is like a docker container for data models.",
+      "descriptionOfUse": "ollamacreate -f — Create a custom modelollamaserve — Start theOllamaAPI serverollamaps — Show running modelsollamastop — Stop a running modelollamahelp — Show help Advanced Customization: Custom model with Modelfiles You can \"fine-tune\" a model's personality and constraints using a Modelfile. This is similar to a ...",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Ollama",
+      "status": "15. Unknown",
+      "championOwner": null,
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://ollama.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "TBD"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "90 - TBD",
+        "pipelineStatus": ""
+      }
+    },
+    {
+      "toolId": "TL004",
+      "origId": "AP141",
+      "oldSharePointId": "141",
+      "sysIdSNOW": null,
+      "toolName": "Msty",
+      "descriptionOfTool": "AI Frontend",
+      "descriptionOfUse": "MstyStudio is a privacy-firstAIplatform that empowers you to design and run advancedAIworkflows using local and online models, directly from a web or desktop interface.Mstyoffers seamless integration with hundreds of top-tier models, powerful tools like Toolbox (MCP), Knowledge Stacks (RAG), Personas (CustomizedAIAssistants), and Turnstiles (Workflows), and fully local data storage ...",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "15. Unknown",
+      "championOwner": null,
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://yieldmaxetfs.com/our-etfs/msty/",
+      "ToolImageURL": null,
+      "useCases": [
+        "TBD"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "90 - TBD",
+        "pipelineStatus": ""
+      }
+    },
+    {
+      "toolId": "TL005",
+      "origId": "AP140",
+      "oldSharePointId": "140",
+      "sysIdSNOW": null,
+      "toolName": "Mistral Small 3.1",
+      "descriptionOfTool": "Building on Mistral Small 3, this new model comes with improved text performance, multimodal understanding, and an expanded context window of up to 128k tokens. The model outperforms comparable models like Gemma 3 and GPT-4o Mini, while delivering inference speeds of 150 tokens per second",
+      "descriptionOfUse": "MistralSmall3.1is a versatile model designed to handle a wide range of generativeAItasks, including instruction following, conversational assistance, image understanding, and function calling.",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Mistral",
+      "status": "15. Unknown",
+      "championOwner": null,
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://mistral.ai/news/mistral-small-3-1",
+      "ToolImageURL": null,
+      "useCases": [
+        "TBD"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "90 - TBD",
+        "pipelineStatus": ""
+      }
+    },
+    {
+      "toolId": "TL006",
+      "origId": "AP138",
+      "oldSharePointId": "138",
+      "sysIdSNOW": null,
+      "toolName": "HeyGen",
+      "descriptionOfTool": "voice-over, avatar videos designed creator/editor",
+      "descriptionOfUse": "How-tovideos are a powerful way to educate audiences, enhance users' experience, and simplify complex processes. WithHeyGen, you can create high-quality step-by-step guides, getting started tutorials, and best practice videos usingAIavatars, automated video creation, and professional voiceovers. Follow this guide to streamline your instructional content creation.",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "HeyGen",
+      "status": "15. Unknown",
+      "championOwner": null,
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.heygen.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "TBD"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "90 - TBD",
+        "pipelineStatus": ""
+      }
+    },
+    {
+      "toolId": "TL007",
+      "origId": "AP137",
+      "oldSharePointId": "137",
+      "sysIdSNOW": null,
+      "toolName": "Elicit AI",
+      "descriptionOfTool": "AI for Researching Acedemic Papers",
+      "descriptionOfUse": "HowtoUseElicitAI: A Beginner's Guide Snigdha Keshariya Jan 30, 2025AIElicitAIis a data driven research assistant to simplify and to help you do research better.ElicitAIis a helpful tool whether you are a student, academic or professional, you can search for the relevant information, organize your ideas and make better decisions.",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Elicit",
+      "status": "15. Unknown",
+      "championOwner": null,
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://elicit.com/?redirected=true",
+      "ToolImageURL": null,
+      "useCases": [
+        "TBD"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "90 - TBD",
+        "pipelineStatus": ""
+      }
+    },
+    {
+      "toolId": "TL008",
+      "origId": "AP136",
+      "oldSharePointId": "136",
+      "sysIdSNOW": null,
+      "toolName": "DeepL Pro",
+      "descriptionOfTool": "DeepL Translate is an interactive generative AI website that offers accurate and nuanced translations for work-related content. Users can insert text or upload files to translate in various languages, improving communication and language barriers in the workplace.DeepL Translate is an interactive generative AI website that offers accurate and nuanced translations for work-related content. Users can insert text or upload files to translate in various languages, improving communication and language barriers in the workplace.",
+      "descriptionOfUse": "Should youuseDeepLforAItranslations?DeepLcould be particularly useful for professional translators, because there's an option to integrateDeepLProwith your preferred Computer-Assisted ...",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "DeepL",
+      "status": "10. Active",
+      "championOwner": null,
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.deepl.com/en/pro",
+      "ToolImageURL": null,
+      "useCases": [
+        "TBD"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "70 - Monitoring",
+        "pipelineStatus": "08 – Continuous Evaluation"
+      }
+    },
+    {
+      "toolId": "TL009",
+      "origId": "AP135",
+      "oldSharePointId": "135",
+      "sysIdSNOW": null,
+      "toolName": "Creatify",
+      "descriptionOfTool": "Product Video AI Generator",
+      "descriptionOfUse": "HowtoEdit The Generated Video Here'showtotweak and edit yourAIgenerated video to your liking!HowtoAdd Assets in Editor Here's a guidehowhowtoadd assets on to your projects while on Editor.",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Creatify",
+      "status": "15. Unknown",
+      "championOwner": null,
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://creatify.ai/",
+      "ToolImageURL": null,
+      "useCases": [
+        "TBD"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "90 - TBD",
+        "pipelineStatus": ""
+      }
+    },
+    {
+      "toolId": "TL010",
+      "origId": "AP130",
+      "oldSharePointId": "130",
+      "sysIdSNOW": null,
+      "toolName": "Adobe AI",
+      "descriptionOfTool": "Content generation",
+      "descriptionOfUse": "Discover all theAIfeatures atAdobe. Find everything from our firstAIfeatures to the headline-making new releases.",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Adobe",
+      "status": "6. Pilot Phase",
+      "championOwner": "Matthew.Mueller@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.adobe.com/ai/overview.html",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "50 - Testing",
+        "pipelineStatus": "100 - TBD"
+      }
+    },
+    {
+      "toolId": "TL011",
+      "origId": "AP121",
+      "oldSharePointId": "121",
+      "sysIdSNOW": null,
+      "toolName": "Transperfect",
+      "descriptionOfTool": "Convert human-assisted translation process to AI.",
+      "descriptionOfUse": "https://www.transperfect.com/technology/artificial-intelligence",
+      "activityPlanned": null,
+      "enterpriseCode": "Digital Imaging",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Transperfect",
+      "status": "0. Idea Created",
+      "championOwner": "Jeff.Hesemann@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.transperfect.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "00 - Idea",
+        "pipelineStatus": "100 – TBD"
+      }
+    },
+    {
+      "toolId": "TL012",
+      "origId": "AP119",
+      "oldSharePointId": "119",
+      "sysIdSNOW": null,
+      "toolName": "Matlab's Statistics and Machine Learning Toolbox",
+      "descriptionOfTool": "Numerical Computation, Algorithm Development",
+      "descriptionOfUse": "MATLAB® makes data science easy with tools to access and preprocess data, buildmachinelearningandpredictive models, and deploy models. Using apps or with just a few lines ofMATLABcode, you can apply statistical,machine,anddeeplearningtechniques to your work for designing algorithms, preparing and labeling data, or generating code and deploying to embedded systems. ExtendAI...",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "1. Product Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Matlab",
+      "status": "2. Interest Phase",
+      "championOwner": null,
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.mathworks.com/products/statistics.html",
+      "ToolImageURL": null,
+      "useCases": [
+        "Engineering"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL013",
+      "origId": "AP117",
+      "oldSharePointId": "117",
+      "sysIdSNOW": null,
+      "toolName": "Sora",
+      "descriptionOfTool": "Marketing content creation (image: Sora)",
+      "descriptionOfUse": "Reduced expense by not having to shoot 'on location'.",
+      "activityPlanned": null,
+      "enterpriseCode": "Digital Imaging",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Sora",
+      "status": "15. Unknown",
+      "championOwner": "Jeff.Hesemann@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://sora.chatgpt.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "90 - TBD",
+        "pipelineStatus": "01 - Request"
+      }
+    },
+    {
+      "toolId": "TL014",
+      "origId": "AP89",
+      "oldSharePointId": "89",
+      "sysIdSNOW": null,
+      "toolName": "GitHub Copilot",
+      "descriptionOfTool": "Enterprise Code Development Acceleration",
+      "descriptionOfUse": "Increase developer productivity by 20-30%, reduce time-to-market for new features, improve code quality through AI-assisted reviews",
+      "activityPlanned": null,
+      "enterpriseCode": "Enterprise",
+      "category": "3. Code & Development",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "GitHub",
+      "status": "10. Active",
+      "championOwner": "Matthew.Mueller@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://github.com/features/copilot",
+      "ToolImageURL": null,
+      "useCases": [
+        "Coding & Software Development"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "70 - Monitoring",
+        "pipelineStatus": "08 – Continuous Evaluation"
+      }
+    },
+    {
+      "toolId": "TL015",
+      "origId": "AP59",
+      "oldSharePointId": "59",
+      "sysIdSNOW": null,
+      "toolName": "USPTO Virtual Assistant",
+      "descriptionOfTool": "Patent application status checks, access to common information, and user feedback integration",
+      "descriptionOfUse": "TheVirtualAssistantprovides answers to common customer questions and makes it easier to find the status of your patent application. Simply type \"What is the status of my application?\" into the chat box and enter your application number when prompted. The tool will guide you to the most up-to-date information in Patent Center.",
+      "activityPlanned": null,
+      "enterpriseCode": "Enterprise",
+      "category": "1. Product Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "USPTO",
+      "status": "10. Active",
+      "championOwner": "Patrick.Bradley@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.uspto.gov/about-us/news-updates/uspto-virtual-assistant-now-available-patents-customers",
+      "ToolImageURL": null,
+      "useCases": [
+        "Engineering"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "70 - Monitoring",
+        "pipelineStatus": "08 – Continuous Evaluation"
+      }
+    },
+    {
+      "toolId": "TL016",
+      "origId": "AP58",
+      "oldSharePointId": "58",
+      "sysIdSNOW": null,
+      "toolName": "TecSmith Camtasia",
+      "descriptionOfTool": "Video-editing, screen recording, creation",
+      "descriptionOfUse": "Camtasia.aiFrequently Asked QuestionsHowdo I generate a video using theAIvideo creator? Step-by-step answer Upload screenshots Drag and drop or upload the screenshots needed for your video (jpg or png files) TheAIusesthese images to understand your intent; no need for lengthy instructions. Enter a simple prompt Describe the type or style of video you want (such as fun, social, or ...",
+      "activityPlanned": null,
+      "enterpriseCode": "Digital Imaging",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "TecSmith",
+      "status": "2. Interest Phase",
+      "championOwner": "Bruno.Menard@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.techsmith.com/camtasia/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL017",
+      "origId": "AP57",
+      "oldSharePointId": "57",
+      "sysIdSNOW": null,
+      "toolName": "Teamate + AI Editor",
+      "descriptionOfTool": "TeamMate+AIEditor—a secure, practical generativeAItooldesigned to enhance writing efficiency and audit quality for internal audit professionals.",
+      "descriptionOfUse": "TeamMate+AIEditor—a secure, practical generativeAItool designed to enhance writing efficiency and audit quality for internal audit professionals.",
+      "activityPlanned": null,
+      "enterpriseCode": "Enterprise",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Adail.Quazi@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.wolterskluwer.com/en/know/teammate-ai-editor-demonstration",
+      "ToolImageURL": null,
+      "useCases": [
+        "IT"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL018",
+      "origId": "AP56",
+      "oldSharePointId": "56",
+      "sysIdSNOW": null,
+      "toolName": "Sway",
+      "descriptionOfTool": "Swayisan easy-to-use digital storytelling app for creating interactive reports, presentations, personal stories and more. Its built-in design engine helps you create professional designs in minutes. WithSway, your images, text, videos, and other multimedia all flow together in a way that enhances your story.Swaymakes sure your creations look great on any screen.",
+      "descriptionOfUse": "New to MicrosoftSway? This article provides an overview ofhoweasy it is to create and share anything withSway'scolorful and interactive canvas. Learnhowtocreate and preview your firstSway,howtoadd and embed content, andhowtoshare your finished creation with others. What isSway? Video:UseSwaytoreimaginehowyour ideas come to lifeSwayis a new app from Microsoft Office ...",
+      "activityPlanned": null,
+      "enterpriseCode": "Digital Imaging",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Lee.Fraser@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://sway.cloud.microsoft/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL019",
+      "origId": "AP55",
+      "oldSharePointId": "55",
+      "sysIdSNOW": null,
+      "toolName": "SurveyMonkey",
+      "descriptionOfTool": "Discover next-genAIfeatures fromSurveyMonkey. for smarter surveys and deeper insights. Create surveys faster withAI-powered imports, theme generation, and mobiletools. Analyze data with the newAIAnalysis Suite, including chat-based analysis and thematic analysis.",
+      "descriptionOfUse": "ManagingAIFeature AccessSurveyMonkeyprovidesAIand machine learning features to help you create better surveys, gather higher quality data, and spot insights quicker. Team and Enterprise admins can control what features their teams have access to at any time.",
+      "activityPlanned": null,
+      "enterpriseCode": "Enterprise",
+      "category": "2. Customer Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Baylee.Yarbrough@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.surveymonkey.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Product & Customer Support"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL020",
+      "origId": "AP54",
+      "oldSharePointId": "54",
+      "sysIdSNOW": null,
+      "toolName": "Sophia Query",
+      "descriptionOfTool": "Patent analytics and visualization, Semantic search capabilities, Portfolio monitoring and management",
+      "descriptionOfUse": "SophiaQueryis anAIchat box assistant, trained to take your Natural Language questions and turn them into a Boolean Patent SearchQuery. It allows you to chat à la ChatGPT to create aquery. Its sole purpose is to help you build a Booleanquerytofind the most relevant documents. The aim is not to be exhaustive but focused.Howtouseit?",
+      "activityPlanned": null,
+      "enterpriseCode": "Aerospace & Defense Electronics",
+      "category": "1. Product Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Pierre.Fereyre@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://intelligence.help.questel.com/en/support/solutions/articles/77000574749-sophia-query-your-ai-query-builder",
+      "ToolImageURL": null,
+      "useCases": [
+        "Engineering"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL021",
+      "origId": "AP53",
+      "oldSharePointId": "53",
+      "sysIdSNOW": null,
+      "toolName": "Scribe",
+      "descriptionOfTool": "AI tool for automatic creation of SOPs, help centers, user guides, and process overviews; pilot for data integrity documentation in ERP systems.",
+      "descriptionOfUse": "AskAItoimprove your process document OnceScribeAIhas created your process document, you can ask it to improve the grammar, tone, and spelling. Thisfunctionalityis also perfect for users who wrote the initial document and want a second pair of eyes to edit it. Here are the edit capabilities you canuse: Improve writing Fix grammar Make professional Make friendly Summarize Expand",
+      "activityPlanned": "Pilot in ERP data integrity project; evaluate Copilot vs. Scribe for documentation",
+      "enterpriseCode": "Trade Compliance",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Scribe",
+      "status": "2. Interest Phase",
+      "championOwner": "Lori.Hanley@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://scribe.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation",
+        "Reduced manual documentation effort"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "01 - Request"
+      }
+    },
+    {
+      "toolId": "TL022",
+      "origId": "AP52",
+      "oldSharePointId": "52",
+      "sysIdSNOW": null,
+      "toolName": "Salesforce Einstein GPT Pilot (AI Integration)",
+      "descriptionOfTool": "Generative AI for CRM insights and automated responses.",
+      "descriptionOfUse": "Enhance customer engagement and automate CRM communications.",
+      "activityPlanned": null,
+      "enterpriseCode": "Enterprise",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Salesforce",
+      "status": "2. Interest Phase",
+      "championOwner": "Chris.Busso@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.salesforce.com/news/press-releases/2023/03/07/einstein-generative-ai/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL023",
+      "origId": "AP51",
+      "oldSharePointId": "51",
+      "sysIdSNOW": null,
+      "toolName": "Qualtrics XM",
+      "descriptionOfTool": "About Artificial Intelligence (AI) Overview (Discover) Discover offers a variety of artificial intelligence (AI) features that can help analyze your data. Qtip: This support page only covers Discover features. If you're interested inAIinQualtrics, see this page.",
+      "descriptionOfUse": "Learnhowtosystematically incorporate three categories ofAI- Analytical, Generative, and Agentic - into your Experience Management program with this practical, step-by-step guide.",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Qualtrics",
+      "status": "2. Interest Phase",
+      "championOwner": "Matthew.Mueller@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.qualtrics.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "TBD"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL024",
+      "origId": "AP50",
+      "oldSharePointId": "50",
+      "sysIdSNOW": null,
+      "toolName": "Pollfish",
+      "descriptionOfTool": "AI-Driven Surveys",
+      "descriptionOfUse": "Pollfishis the only market research platform that unifies the entire workflow: anAISurvey Builder to create, a globalPollfishAudience to collect high-quality data using conversationAIpowered surveys, and anAIsurvey Analysis engine to analyze and deliver reports in minutes.",
+      "activityPlanned": null,
+      "enterpriseCode": "Digital Imaging",
+      "category": "2. Customer Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "AI withPollfish",
+      "status": "2. Interest Phase",
+      "championOwner": "Jey.Tamber@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.pollfish.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Product & Customer Support"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL025",
+      "origId": "AP49",
+      "oldSharePointId": "49",
+      "sysIdSNOW": null,
+      "toolName": "Perplexity Entrprise",
+      "descriptionOfTool": "AI Search Engine, Conversational Interface, Cited Sources",
+      "descriptionOfUse": "Unlock the full power ofPerplexityEnterprise with expert insights and scalable tools.",
+      "activityPlanned": null,
+      "enterpriseCode": "Instrumentation",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Perplexity",
+      "status": "2. Interest Phase",
+      "championOwner": "mark.b.anderson@teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.perplexity.ai/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Enterprise (All)"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL026",
+      "origId": "AP48",
+      "oldSharePointId": "48",
+      "sysIdSNOW": null,
+      "toolName": "Notion",
+      "descriptionOfTool": "Get the most out of your Business trial withNotionAIStart your Business trial and explorewhat'spossible withNotionAI. Connect your favoritetools, capture meetings automatically, and let your Personal Agent build end-to-end workflows — all in one place.",
+      "descriptionOfUse": "Meet the newNotionAI— a helpful assistant right inside your workspace. In this guide, we'll walk you throughhowNotionAIcan help you discover answers, bring information together, and automate tedious tasks — giving you more time to focus on what really matters.",
+      "activityPlanned": null,
+      "enterpriseCode": "Aerospace & Defense Electronics",
+      "category": "7. Research & Knowledge",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Notion",
+      "status": "2. Interest Phase",
+      "championOwner": "Onkar.Nirhali@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.notion.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Knowledge Management"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL027",
+      "origId": "AP47",
+      "oldSharePointId": "47",
+      "sysIdSNOW": null,
+      "toolName": "Notebook.LM",
+      "descriptionOfTool": "MeetNotebookLM, theAIresearchtooland thinking partner that can analyze your sources, turn complexity into clarity and transform your content.",
+      "descriptionOfUse": "NotebookLMis anAI-powered tool for more deeply understanding something — we asked a Google expert to give us a few tips onhowtouseit.",
+      "activityPlanned": "Pilot content‑grounded onboarding & research uses; evaluate scale.",
+      "enterpriseCode": "Instrumentation",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Betsey.Seibel@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://notebooklm.google/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL028",
+      "origId": "AP46",
+      "oldSharePointId": "46",
+      "sysIdSNOW": null,
+      "toolName": "Murf",
+      "descriptionOfTool": "Text-to-speech conversion, voice cloning, and voice style customization",
+      "descriptionOfUse": "MasterhowtouseMurfAIwith our expert guide. Create broadcast-ready voiceovers, edit, sync video, and boost workflow efficiency. Get pro audio in minutes!",
+      "activityPlanned": null,
+      "enterpriseCode": "Digital Imaging",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Murf",
+      "status": "10. Active",
+      "championOwner": "Rejean.Denoncourt@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://murf.ai/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "70 - Monitoring",
+        "pipelineStatus": "08 – Continuous Evaluation"
+      }
+    },
+    {
+      "toolId": "TL029",
+      "origId": "AP45",
+      "oldSharePointId": "45",
+      "sysIdSNOW": null,
+      "toolName": "Wonderchat Ai",
+      "descriptionOfTool": "<div>Personalized chatbots</div>",
+      "descriptionOfUse": "👋 Welcome toWonderchatOverviewWonderchatis a no codeAIChatbot builder that lets you create a ChatGPT from your own website or files in under 5 minutes. WithWonderchat, you can automate customer support on your website. Our users have experienced up to a 70% reduction in customer support emails after implementingWonderchaton their ...",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "2. Customer Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "14. Cancelled",
+      "championOwner": null,
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://wonderchat.io/ai-agents",
+      "ToolImageURL": null,
+      "useCases": [
+        "Product & Customer Support"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "99 - Closed/Cancelled",
+        "pipelineStatus": "99 - Reviewed/Prohibited"
+      }
+    },
+    {
+      "toolId": "TL030",
+      "origId": "AP44",
+      "oldSharePointId": "44",
+      "sysIdSNOW": null,
+      "toolName": "Wikiwant - Wikipedia and Beyond",
+      "descriptionOfTool": "<div>Modern Interface, Navigation Tools, and Customization Options</div>",
+      "descriptionOfUse": "DiscoverhowtouseWikiWand to transform yourWikipediabrowsing. Learn about its features, installation, and tips for an enhanced learning experience. Explore the full guide now!",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "7. Research & Knowledge",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "14. Cancelled",
+      "championOwner": "Vincent.Siu@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.wikiwand.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Knowledge Retrieval"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "99 - Closed/Cancelled",
+        "pipelineStatus": "99 - Reviewed/Prohibited"
+      }
+    },
+    {
+      "toolId": "TL031",
+      "origId": "AP43",
+      "oldSharePointId": "43",
+      "sysIdSNOW": null,
+      "toolName": "Smallpdf",
+      "descriptionOfTool": "<div>PDF conversion, PDF editing &amp; compression,and E-signature &amp; security</div>",
+      "descriptionOfUse": "LearnhowtouseAIPDF tools to extract text, tables, and more. Find outhowSmallpdfsimplifies automated data retrieval and content mining.",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "7. Research & Knowledge",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "14. Cancelled",
+      "championOwner": "Ahmad.Halawani@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://smallpdf.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Documentation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "99 - Closed/Cancelled",
+        "pipelineStatus": "99 - Reviewed/Prohibited"
+      }
+    },
+    {
+      "toolId": "TL032",
+      "origId": "AP42",
+      "oldSharePointId": "42",
+      "sysIdSNOW": null,
+      "toolName": "Sider: ChatGPT",
+      "descriptionOfTool": "<div>Advanced Text Generation, Language Translation, Content Summarization, and contextual conversation capabilities</div>",
+      "descriptionOfUse": null,
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "14. Cancelled",
+      "championOwner": "Johnson.Wu@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": null,
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "99 - Closed/Cancelled",
+        "pipelineStatus": "99 - Reviewed/Prohibited"
+      }
+    },
+    {
+      "toolId": "TL033",
+      "origId": "AP41",
+      "oldSharePointId": "41",
+      "sysIdSNOW": null,
+      "toolName": "Paligo",
+      "descriptionOfTool": "<div>Content Automation, Topic-Based Authoring, and Collaboration Tools</div>",
+      "descriptionOfUse": "The built-inAIAssistant in the Contributor Editor provides you the ability to improve existing content, but also to generate new content such as titles, paragraphs, lists, and tables by prompting OpenAPI.",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "14. Cancelled",
+      "championOwner": "Alex.Chrusciel@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://paligo.net/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "99 - Closed/Cancelled",
+        "pipelineStatus": "99 - Reviewed/Prohibited"
+      }
+    },
+    {
+      "toolId": "TL034",
+      "origId": "AP40",
+      "oldSharePointId": "40",
+      "sysIdSNOW": null,
+      "toolName": "Loom",
+      "descriptionOfTool": "<div>Auto summaries, filler word removal, AI-generated share messages and links, and document creation from videos</div>",
+      "descriptionOfUse": "UseAIworkflows Automate your daily tasks withAIworkflows.LoomAIworkflows transform your video into a text document or message, ready to share with your team.LoomAIworkflows are only available onLoom'sAISuite. Learn more aboutLoom'sAIsuite pricing and billing.",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "7. Research & Knowledge",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "14. Cancelled",
+      "championOwner": "Ruben.Ibanez@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.loom.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Documentation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "99 - Closed/Cancelled",
+        "pipelineStatus": "99 - Reviewed/Prohibited"
+      }
+    },
+    {
+      "toolId": "TL035",
+      "origId": "AP39",
+      "oldSharePointId": "39",
+      "sysIdSNOW": null,
+      "toolName": "LabelBox",
+      "descriptionOfTool": "<div>Customizable labeling tools, collaborative workflow, and data management &amp; integration,</div>",
+      "descriptionOfUse": "UsingLabelboxtoimprove data quality via AutoQA & advanced labeler review Learnhowyou canuseLabelboxtoaccelerate the quality review process for creating better data for generativeAIusecases using autoQA and advanced labeler reviews.",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "7. Research & Knowledge",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "14. Cancelled",
+      "championOwner": "Johan.Johansson@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://labelbox.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Knowledge Management"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "99 - Closed/Cancelled",
+        "pipelineStatus": "99 - Reviewed/Prohibited"
+      }
+    },
+    {
+      "toolId": "TL036",
+      "origId": "AP38",
+      "oldSharePointId": "38",
+      "sysIdSNOW": null,
+      "toolName": "JotForm",
+      "descriptionOfTool": "<div>AI forms and surveys</div>",
+      "descriptionOfUse": "HowtoUseAIAgent Templates withJotformAIAgent Mobile App TheJotformAIAgent Mobile App makes it easy to set up anAI-powered assistant with ready-made templates. Instead of starting from scratch, you can choose a template with predefined roles, responses, and settings tailored for tasks like customer...",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "2. Customer Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "14. Cancelled",
+      "championOwner": "Sharon.Fletcher@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.jotform.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Product & Customer Support"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "99 - Closed/Cancelled",
+        "pipelineStatus": "99 - Reviewed/Prohibited"
+      }
+    },
+    {
+      "toolId": "TL037",
+      "origId": "AP37",
+      "oldSharePointId": "37",
+      "sysIdSNOW": null,
+      "toolName": "Duck.ai",
+      "descriptionOfTool": "<div>Privacy focused AI chat, multiple AI model support, and local chat history</div>",
+      "descriptionOfUse": "Duck.aiDuck.aiis a feature that allows you to have private conversations with 3rd-partyAIchat models, anonymized by us. Anthropic's Claude 3.5 Haiku, Meta's Llama 4 Scout, MistralAI'sMistral Small 3 24B, and OpenAI's GPT-5 mini and GPT-4o mini are available tousefor free.",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "DuckDuckGo",
+      "status": "14. Cancelled",
+      "championOwner": null,
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://duckduckgo.com/duckduckgo-help-pages/duckai",
+      "ToolImageURL": null,
+      "useCases": [
+        "Enterprise (All)"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "99 - Closed/Cancelled",
+        "pipelineStatus": "99 - Reviewed/Prohibited"
+      }
+    },
+    {
+      "toolId": "TL038",
+      "origId": "AP36",
+      "oldSharePointId": "36",
+      "sysIdSNOW": null,
+      "toolName": "Cordial",
+      "descriptionOfTool": "<div>Customer Understanding, Message Analysis, Marketer Support, Generative AI Content</div>",
+      "descriptionOfUse": "CordialEdge is also the first tousemultimodalAI, which looks at multiple types of data simultaneously, allowing marketers to optimize every aspect of a message—brand graphics, illustrations, photography, and text—unlike the text-only focus of most currentAItools. Learn more aboutCordialEdge. Store images and HTML Image library",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "2. Customer Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "14. Cancelled",
+      "championOwner": "Romain.Plouviez@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://cordial.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Product & Customer Support"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "99 - Closed/Cancelled",
+        "pipelineStatus": "99 - Reviewed/Prohibited"
+      }
+    },
+    {
+      "toolId": "TL039",
+      "origId": "AP35",
+      "oldSharePointId": "35",
+      "sysIdSNOW": null,
+      "toolName": "Citexs",
+      "descriptionOfTool": "<div>Advanced Data Analytics, Automated Workflow Integration, and AI-Powered Text Proofreading</div>",
+      "descriptionOfUse": "赛特新思（citexs）致力于打造一个开放的公益科研平台，提供文献检索、SCI辅助写作、AI文献大数据挖掘与分析、SCI期刊查选、撰写自然科学基金申请书、国家自然科学基金查询、资讯解读等科研工具。本平台基于人工智能模型和大数据分析技术，专注开发各类满足不同使用场景、提高用户使用体验 ...",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "1. Product Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "14. Cancelled",
+      "championOwner": "Xinyan.Li@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://cites.org/eng",
+      "ToolImageURL": null,
+      "useCases": [
+        "Engineering"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "99 - Closed/Cancelled",
+        "pipelineStatus": "99 - Reviewed/Prohibited"
+      }
+    },
+    {
+      "toolId": "TL040",
+      "origId": "AP34",
+      "oldSharePointId": "34",
+      "sysIdSNOW": null,
+      "toolName": "Beautiful.AI",
+      "descriptionOfTool": "<div>AI created presentation tool</div>",
+      "descriptionOfUse": "Beautiful.aihelps you create stunning, branded slide decks in minutes. Its smart templates do the design work for you, so your presentations always look polished and professional.",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "14. Cancelled",
+      "championOwner": "Baylee.Yarbrough@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.beautiful.ai/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "99 - Closed/Cancelled",
+        "pipelineStatus": "99 - Reviewed/Prohibited"
+      }
+    },
+    {
+      "toolId": "TL041",
+      "origId": "AP33",
+      "oldSharePointId": "33",
+      "sysIdSNOW": null,
+      "toolName": "Atlassian Intelligence",
+      "descriptionOfTool": "<div>AI-powered summarization &amp; answers, smart querying &amp; automation, and context-aware assistance</div>",
+      "descriptionOfUse": "Atlassian'sAIfeatures help teams increase efficiency and accelerate work with the assistance and generative powers of artificialintelligence, powered by over 20 years of teamwork data fromAtlassian'sapp s and ecosystem.UseAIin your app s to accelerate productivity, leverage organizational data, and streamline data-driven decision ...",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "14. Cancelled",
+      "championOwner": "Keli.Merkel@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "ToolImageURL": null,
+      "useCases": [
+        "Project Management"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "99 - Closed/Cancelled",
+        "pipelineStatus": "99 - Reviewed/Prohibited"
+      }
+    },
+    {
+      "toolId": "TL042",
+      "origId": "AP32",
+      "oldSharePointId": "32",
+      "sysIdSNOW": null,
+      "toolName": "AI Grammar Checker & Paraphraser",
+      "descriptionOfTool": "<div>Advanced Grammar and Spelling Check, Paraphrasing Tool, and Style Tone Suggestions</div>",
+      "descriptionOfUse": "Elevate your writing with our freeAIgrammarchecker. Effortlessly catchgrammar, spelling, and punctuation errors, ensuring your content is polished and error-free.",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "7. Research & Knowledge",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "14. Cancelled",
+      "championOwner": "Marcel.Alves@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://ahrefs.com/writing-tools/grammar-checker",
+      "ToolImageURL": null,
+      "useCases": [
+        "Documentation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "99 - Closed/Cancelled",
+        "pipelineStatus": "99 - Reviewed/Prohibited"
+      }
+    },
+    {
+      "toolId": "TL043",
+      "origId": "AP31",
+      "oldSharePointId": "31",
+      "sysIdSNOW": null,
+      "toolName": "Mistral AI Pilot (Platform)",
+      "descriptionOfTool": "Risk assessment for AI-enabled customer support tool in Teledyne RESON.",
+      "descriptionOfUse": "Learnhowtodeploy anduseMistralAI'sLarge Language Models with our comprehensive documentation, guides, and tutorials.",
+      "activityPlanned": null,
+      "enterpriseCode": "Instrumentation",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Mistral",
+      "status": "6. Pilot Phase",
+      "championOwner": "Tim.Jensen@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://mistral.ai/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Enterprise (All)"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "20 - PoC",
+        "pipelineStatus": "05 – Pilot (approved)"
+      }
+    },
+    {
+      "toolId": "TL044",
+      "origId": "AP30",
+      "oldSharePointId": "30",
+      "sysIdSNOW": null,
+      "toolName": "Miro Assist",
+      "descriptionOfTool": "MiroAIisa suite of artificial intelligence features that enhances team productivity, streamlines workflows, and sparks creativity during your brainstorming, planning, and project management sessions.",
+      "descriptionOfUse": "Everything you need to know to collaborate efficiently inMiro. Helpful articles,how-toguides, GIFs, and more.",
+      "activityPlanned": "If approved, limited pilot for planning workflows (Animal detection project).",
+      "enterpriseCode": "Digital Imaging",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Miro",
+      "status": "2. Interest Phase",
+      "championOwner": "Mikael.Erlandsson@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://miro.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Project Management"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL045",
+      "origId": "AP29",
+      "oldSharePointId": "29",
+      "sysIdSNOW": null,
+      "toolName": "Matlab's Statistics and Machine Learning Toolbox",
+      "descriptionOfTool": "Numerical Computation, Algorithm Development",
+      "descriptionOfUse": "MATLAB® makes data science easy with tools to access and preprocess data, buildmachinelearningandpredictive models, and deploy models. Using apps or with just a few lines ofMATLABcode, you can apply statistical,machine,anddeeplearningtechniques to your work for designing algorithms, preparing and labeling data, or generating code and deploying to embedded systems. ExtendAI...",
+      "activityPlanned": null,
+      "enterpriseCode": "Digital Imaging",
+      "category": "1. Product Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Matlab",
+      "status": "2. Interest Phase",
+      "championOwner": "Gabriel.Campos@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.mathworks.com/products/statistics.html",
+      "ToolImageURL": null,
+      "useCases": [
+        "Engineering"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "01 - Request"
+      }
+    },
+    {
+      "toolId": "TL046",
+      "origId": "AP28",
+      "oldSharePointId": "28",
+      "sysIdSNOW": null,
+      "toolName": "LITMO",
+      "descriptionOfTool": "Boost learning withLitmos'AIAssistant. Our LMS uses generativeAIto personalize training, automate tasks, and deliver faster learning outcomes.",
+      "descriptionOfUse": "Boost learning withLitmos'AIAssistant. Our LMSusesgenerativeAItopersonalize training, automate tasks, and deliver faster learning outcomes.",
+      "activityPlanned": null,
+      "enterpriseCode": "Digital Imaging",
+      "category": "1. Product Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Joseph.Rocchio@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.litmos.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Engineering"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL047",
+      "origId": "AP27",
+      "oldSharePointId": "27",
+      "sysIdSNOW": null,
+      "toolName": "Knoledge Lake Intuitive AI",
+      "descriptionOfTool": "Document Classification and Extraction, Intelligent Data Capture, Automated Workflow",
+      "descriptionOfUse": "KnowledgeLake'sIntuitiveAIis self-training and can automatically summarize, interpret, and extract information from any document within seconds.",
+      "activityPlanned": null,
+      "enterpriseCode": "Enterprise",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Becky.Parker@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.knowledgelake.com/intuitive-ai",
+      "ToolImageURL": null,
+      "useCases": [
+        "Automation of Process"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL048",
+      "origId": "AP26",
+      "oldSharePointId": "26",
+      "sysIdSNOW": null,
+      "toolName": "Open AI ChatGPT",
+      "descriptionOfTool": "<div>Risk assessment for ChatGPT deployment across internal teams.</div>",
+      "descriptionOfUse": "A Beginner's Guide toChatGPT:HowtoGet Started With theAIChatbotChatGPTis a lot simpler tousethan you think, and there are many ways to make it work well for you.",
+      "activityPlanned": null,
+      "enterpriseCode": "Instrumentation",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "14. Cancelled",
+      "championOwner": "Guy.Frankland@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://chatgpt.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Enterprise (All)"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "99 - Closed/Cancelled",
+        "pipelineStatus": "99 - Reviewed/Prohibited"
+      }
+    },
+    {
+      "toolId": "TL049",
+      "origId": "AP25",
+      "oldSharePointId": "25",
+      "sysIdSNOW": null,
+      "toolName": "Ivalua AI (Platform)",
+      "descriptionOfTool": "Supplier Management, Sourcing Optimization, and Procurement Automation",
+      "descriptionOfUse": "Improve procurement efficiency and reduce manual workload.",
+      "activityPlanned": null,
+      "enterpriseCode": "TBD",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Kenneth.Hoganson@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.ivalua.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Supply Chain",
+        "Enable GenAI add‑ins after mid‑Nov upgrade; evaluate point features and scale where value."
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL050",
+      "origId": "AP24",
+      "oldSharePointId": "24",
+      "sysIdSNOW": null,
+      "toolName": "Hugging Face",
+      "descriptionOfTool": "We're on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "descriptionOfUse": "A Blog post by Vladislav Guzey onHuggingFace",
+      "activityPlanned": "If approved, stand up HF Model Gateway / curated repo path; otherwise document alternatives.",
+      "enterpriseCode": "ITSS",
+      "category": "1. Product Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Matthew.Mueller@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://huggingface.co/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Engineering"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL051",
+      "origId": "AP23",
+      "oldSharePointId": "23",
+      "sysIdSNOW": null,
+      "toolName": "HeyGen",
+      "descriptionOfTool": "Video Translation, AI Lip Sync, Transcript review",
+      "descriptionOfUse": "Reduce video production time and cost for scalable content creation.",
+      "activityPlanned": null,
+      "enterpriseCode": "Digital Imaging",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "HeyGen",
+      "status": "2. Interest Phase",
+      "championOwner": "Jeff.Hesemann@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.heygen.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation",
+        "Replace ~$140k/yr agency spend; faster multi‑language assets"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL052",
+      "origId": "AP22",
+      "oldSharePointId": "22",
+      "sysIdSNOW": null,
+      "toolName": "Google Gemini (Platform)",
+      "descriptionOfTool": "Evaluation of Google AI capabilities for generative and multimodal use cases.",
+      "descriptionOfUse": "Productivity enhancement for decision-making across workflows and content management",
+      "activityPlanned": null,
+      "enterpriseCode": "Enterprise",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Google",
+      "status": "2. Interest Phase",
+      "championOwner": "Matthew.Mueller@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://gemini.google.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Enterprise (All)"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL053",
+      "origId": "AP21",
+      "oldSharePointId": "21",
+      "sysIdSNOW": null,
+      "toolName": "GitHub Copilot (AI Integration)",
+      "descriptionOfTool": "Real-time code suggestions, Multi-language programming support, Context-aware code generation",
+      "descriptionOfUse": "HowtouseGitHubCopilot: What it can do and real-world examplesHowCopilotcan generate unit tests, refactor code, create documentation, perform multi-file edits, and much more.",
+      "activityPlanned": null,
+      "enterpriseCode": "Enterprise",
+      "category": "3. Code & Development",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "GitHub",
+      "status": "10. Active",
+      "championOwner": "Matthew.Mueller@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://github.com/features/copilot",
+      "ToolImageURL": null,
+      "useCases": [
+        "Coding & Software Development",
+        "Dev productivity uplift; reduce cycle time"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "70 - Monitoring",
+        "pipelineStatus": "08 – Continuous Evaluation"
+      }
+    },
+    {
+      "toolId": "TL054",
+      "origId": "AP20",
+      "oldSharePointId": "20",
+      "sysIdSNOW": null,
+      "toolName": "Fin",
+      "descriptionOfTool": "Customer ai agent platform.&#160;Train Fin on your Procedures, knowledge, and policies, so it follows your rules and resolves complex, multi-step queries accurately and reliably.",
+      "descriptionOfUse": "LearnhowtouseFinAIeffectively with our step-by-step guide. We cover training, configuration, workflows, and common mistakes to avoid when setting upFin.",
+      "activityPlanned": null,
+      "enterpriseCode": "Instrumentation",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "William.D.Johnson@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.fincen.gov/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL055",
+      "origId": "AP19",
+      "oldSharePointId": "19",
+      "sysIdSNOW": null,
+      "toolName": "ept.AI",
+      "descriptionOfTool": "AI-driven sales acceleration platform for MEMS business; demo scheduled to showcase lead scoring, proposal automation, and pipeline optimization.",
+      "descriptionOfUse": "Improve proposal turnaround time by 50%, increase lead conversion rates, enable sales team to handle higher volume",
+      "activityPlanned": "Evaluate pilot post-demo; define scope for integration with CRM",
+      "enterpriseCode": "TBD",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "3. Demo Phase",
+      "championOwner": "Colin.Butler@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.ept.ai/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation",
+        "Faster proposal turnaround, improved lead conversion"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "03 – Demo / Evaluation"
+      }
+    },
+    {
+      "toolId": "TL056",
+      "origId": "AP18",
+      "oldSharePointId": "18",
+      "sysIdSNOW": null,
+      "toolName": "Eightify",
+      "descriptionOfTool": "Automated Video Summarization",
+      "descriptionOfUse": "Eightifyanalyzes the video transcript using advancedAIand creates a structured outline that helps you understand any topic quickly. With this tool, you can learn faster, stay productive, and ...",
+      "activityPlanned": null,
+      "enterpriseCode": "Digital Imaging",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "10. Active",
+      "championOwner": "Keiko.Akatsuka@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://eightify.app/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "70 - Monitoring",
+        "pipelineStatus": "08 – Continuous Evaluation"
+      }
+    },
+    {
+      "toolId": "TL057",
+      "origId": "AP17",
+      "oldSharePointId": "17",
+      "sysIdSNOW": null,
+      "toolName": "Docker Desktop: Gordon",
+      "descriptionOfTool": "Easy Setup and Configuration, Integrated Development Environment, and Seamless Collaboration",
+      "descriptionOfUse": null,
+      "activityPlanned": null,
+      "enterpriseCode": "Aerospace & Defense Electronics",
+      "category": "1. Product Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Jeff.Korpa@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": null,
+      "ToolImageURL": null,
+      "useCases": [
+        "Engineering"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL058",
+      "origId": "AP16",
+      "oldSharePointId": "16",
+      "sysIdSNOW": null,
+      "toolName": "DeepL Translation (Platform)",
+      "descriptionOfTool": "AI-powered translation for customer-facing content.",
+      "descriptionOfUse": "HowtoUseDeepLforAI-PoweredTranslationsThis tool aims to provide context-awaretranslations-- including an interactiveAIcompanion that helps you understand cultural references and idioms.",
+      "activityPlanned": null,
+      "enterpriseCode": "Enterprise",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "DeepL",
+      "status": "10. Active",
+      "championOwner": "Matthew.Mueller@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.deepl.com/en/translator",
+      "ToolImageURL": null,
+      "useCases": [
+        "Enterprise (All)"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "70 - Monitoring",
+        "pipelineStatus": "08 – Continuous Evaluation"
+      }
+    },
+    {
+      "toolId": "TL059",
+      "origId": "AP15",
+      "oldSharePointId": "15",
+      "sysIdSNOW": null,
+      "toolName": "Copilot for Power Automate",
+      "descriptionOfTool": "Task automation, business process flows, and system integration",
+      "descriptionOfUse": "Reduce manual task time by 60%, enable citizen automation, decrease operational costs through workflow optimization",
+      "activityPlanned": null,
+      "enterpriseCode": "Enterprise",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "10. Active",
+      "championOwner": "Hunter.Blake@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://learn.microsoft.com/en-us/power-automate/copilot-overview",
+      "ToolImageURL": null,
+      "useCases": [
+        "Automation of Process",
+        "Automated workflows across functions"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "70 - Monitoring",
+        "pipelineStatus": "08 – Continuous Evaluation"
+      }
+    },
+    {
+      "toolId": "TL060",
+      "origId": "AP14",
+      "oldSharePointId": "14",
+      "sysIdSNOW": null,
+      "toolName": "Cludo",
+      "descriptionOfTool": "Advanced search analytics and reports",
+      "descriptionOfUse": "AISummary enhances searchfunctionalityby providing direct, human-like answers at the top of the search results page. By leveraging Retrieval-Augmented Generation (RAG) technology with OpenAI's latest ChatGPT models,AISummary delivers concise and accurate responses based on the most relevant search results.",
+      "activityPlanned": "Pilot AI chat on CSP TEST; finalize governance; site integration subject to approval.",
+      "enterpriseCode": "Instrumentation",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": null,
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.cludo.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL061",
+      "origId": "AP13",
+      "oldSharePointId": "13",
+      "sysIdSNOW": null,
+      "toolName": "Canva Pro",
+      "descriptionOfTool": "AnAIassistant is a softwaretoolpowered by artificial intelligence that understands natural language, responds to commands, and helps users complete specific tasks. One example isCanvaAI, a conversationalAIcreative assistant with its own dedicated chat interface on theCanvahome page. It combines all ofCanva'sAIcapabilities to generate text, images, designs, and widgets based on ...",
+      "descriptionOfUse": "Kickstart Designs withCanvaAIUseCanvaAItobrainstorm ideas, edit designs, and generate content with ease on both the web and mobile. This guide covershowtoaccess its features and troubleshoot common issues so you can create without interruption.",
+      "activityPlanned": null,
+      "enterpriseCode": "Instrumentation",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Betsey.Seibel@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.canva.com/pro/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL062",
+      "origId": "AP12",
+      "oldSharePointId": "12",
+      "sysIdSNOW": null,
+      "toolName": "Canto",
+      "descriptionOfTool": "The Canto Platform reimagines digital asset management — evolving DAM into the Intelligent Content Hub at the heart of your tech stack. Brand and product assets come together in one AI-powered source of truth, empowering teams across the lifecycle to create impact faster.",
+      "descriptionOfUse": "Search for assets WithAIVisual Search, finding the perfect asset is as easy as talking to a colleague. Simply ask for \"pictures of a beach\", andAIVisual Search will return all matching assets in your library without requiring you to remember any of the associated keywords and tags.Canto'sexclusiveAItechnology can even interpret more complicated and abstract requests, such as \"show me a ...",
+      "activityPlanned": null,
+      "enterpriseCode": "Instrumentation",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Craig.Foster@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.canto.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL063",
+      "origId": "AP11",
+      "oldSharePointId": "11",
+      "sysIdSNOW": null,
+      "toolName": "Box",
+      "descriptionOfTool": "Content curation, organization, and publishing",
+      "descriptionOfUse": "Best Practices for Using GenerativeAIinBoxBe clear and specific: The better your instructions, the better the output. Provide context: Briefly describe the purpose or audience for the content. Iterate: Don't hesitate to refine prompts or ask follow-up questions. Validate outputs: Always reviewAI-generated content for accuracy and appropriateness before sharing. Leverage custom ...",
+      "activityPlanned": null,
+      "enterpriseCode": "ITSS",
+      "category": "7. Research & Knowledge",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Kevin.Walker@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.box.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Knowledge Retrieval"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL064",
+      "origId": "AP10",
+      "oldSharePointId": "10",
+      "sysIdSNOW": null,
+      "toolName": "Awarded.AI",
+      "descriptionOfTool": "AI-driven automation for proposal generation in government contracting.",
+      "descriptionOfUse": "Increase win rate on government contracts, reduce proposal time from weeks to days, improve margin through faster turnaround",
+      "activityPlanned": null,
+      "enterpriseCode": "Digital Imaging",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": "Procurement Sciences",
+      "status": "10. Active",
+      "championOwner": "Sherry.Simburger@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://eliteai.tools/tool/awarded-ai",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation",
+        "Increased win rate & bid throughput; proposal automation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "70 - Monitoring",
+        "pipelineStatus": "08 – Continuous Evaluation"
+      }
+    },
+    {
+      "toolId": "TL065",
+      "origId": "AP9",
+      "oldSharePointId": "9",
+      "sysIdSNOW": null,
+      "toolName": "Astrocyte SDK (AI Inspection)",
+      "descriptionOfTool": "AI-powered image analysis for non-destructive inspection and cosmetic quality control of X-ray detectors; detects fiber artifacts and automates exterior inspection.",
+      "descriptionOfUse": "Increase quality of outgoing products and therefore minimize returns",
+      "activityPlanned": "Establish to broader product lines; integrate with production workflow",
+      "enterpriseCode": "Digital Imaging",
+      "category": "1. Product Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Niels.Markhorst@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.teledynevisionsolutions.com/products/astrocyte-ai/?model=astrocyte&vertical=tvs-dalsa-oem&segment=tvs",
+      "ToolImageURL": null,
+      "useCases": [
+        "Engineering",
+        "Reduced inspection time, improved defect detection"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "01 - Request"
+      }
+    },
+    {
+      "toolId": "TL066",
+      "origId": "AP8",
+      "oldSharePointId": "8",
+      "sysIdSNOW": null,
+      "toolName": "Apple Intellgence",
+      "descriptionOfTool": "AppleIntelligenceAIfor the rest of us. Built into your iPhone, iPad, Mac, andAppleVision Pro * to help you write, express yourself, and get things done effortlessly. ** Designed with groundbreaking privacy at every step.",
+      "descriptionOfUse": "UseAppleIntelligence on your iPhone With iOS 26,AppleIntelligence* is integrated across your apps and experiences to help you communicate, express yourself, and get things done more easily. It delivers intelligence that's useful and relevant for you, all while protecting your privacy.",
+      "activityPlanned": null,
+      "enterpriseCode": "Enterprise",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Lennart.Andersson@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.apple.com/apple-intelligence/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Enterprise (All)"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL067",
+      "origId": "AP7",
+      "oldSharePointId": "7",
+      "sysIdSNOW": null,
+      "toolName": "Apiphany",
+      "descriptionOfTool": "Apiphanyisthe only foundationalAImodel built to extract and trend data from structured to unstructured engineering & manufacturing systems, empowering you to surpass your program objectives.",
+      "descriptionOfUse": "Reduce project estimation errors by 25%, improve resource allocation, decrease project cycle time through better upfront planning",
+      "activityPlanned": "TBD after SOW scoping",
+      "enterpriseCode": "Digital Imaging",
+      "category": "1. Product Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "6. Pilot Phase",
+      "championOwner": "Oliver.Heel@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.gibson.com/pages/epiphone",
+      "ToolImageURL": null,
+      "useCases": [
+        "Engineering",
+        "Estimation deviation 50% → 25%; feature‑request response 4–6 wks → 1 wk"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "05 – Pilot (approved)"
+      }
+    },
+    {
+      "toolId": "TL068",
+      "origId": "AP6",
+      "oldSharePointId": "6",
+      "sysIdSNOW": null,
+      "toolName": "Antropic Claude Pilot (Platform)",
+      "descriptionOfTool": "Risk assessment for Claude deployment across internal teams for re",
+      "descriptionOfUse": "Introducing advanced tooluseon theClaudeDeveloperPlatformPublished Nov 24, 2025 We've added three new beta features that letClaudediscover, learn, and execute tools dynamically. Here'showthey work. The future ofAIagents is one where models work seamlessly across hundreds or thousands of tools.",
+      "activityPlanned": null,
+      "enterpriseCode": "Instrumentation",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "6. Pilot Phase",
+      "championOwner": "Matthew.Mueller@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.anthropic.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Enterprise (All)",
+        "Research/knowledge QA; potential enterprise agent"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "20 - PoC",
+        "pipelineStatus": "05 – Pilot (approved)"
+      }
+    },
+    {
+      "toolId": "TL069",
+      "origId": "AP5",
+      "oldSharePointId": "5",
+      "sysIdSNOW": null,
+      "toolName": "ANSYS AI",
+      "descriptionOfTool": "AI-enabled simulation and automation for engineering; focus on reducing cycle time and improving time to market for PCB and semiconductor design.",
+      "descriptionOfUse": "Reduced simulation design cycle time, improved accuracy",
+      "activityPlanned": "Pilot simulation projects; define success criteria with ANSYS team. Work is in progress to set up the system run simulations so we can start. Meeting set to Jan 13, to train the AI tool. ",
+      "enterpriseCode": "Instrumentation",
+      "category": "1. Product Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "3. Demo Phase",
+      "championOwner": "Roger.Delbue@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.ansys.com/ai",
+      "ToolImageURL": null,
+      "useCases": [
+        "Engineering",
+        "Reduced simulation time, improved design accuracy"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "03 – Demo / Evaluation"
+      }
+    },
+    {
+      "toolId": "TL070",
+      "origId": "AP4",
+      "oldSharePointId": "4",
+      "sysIdSNOW": null,
+      "toolName": "Altium Designer",
+      "descriptionOfTool": "Circuit board design, electronic component management, and schematic capture",
+      "descriptionOfUse": "Whether you are designing circuit boards forAIproducts or using maching learning inside our PCB design tools, you want next generation design software.Altium'ssoftware has built-in machine learning to increase productivity with design flows and countless other features. Learn more aboutAIPCB Design and Machine Learning in our industry.",
+      "activityPlanned": null,
+      "enterpriseCode": "Aerospace & Defense Electronics",
+      "category": "1. Product Support",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Jeff.Korpa@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.altium.com/altium-designer",
+      "ToolImageURL": null,
+      "useCases": [
+        "Engineering"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL071",
+      "origId": "AP3",
+      "oldSharePointId": "3",
+      "sysIdSNOW": null,
+      "toolName": "AI Integration for IFS",
+      "descriptionOfTool": "IFSAITheIFSAITask is a purpose-built enhancement introduced forIFSWorkflows, enabling seamlessintegrationofIFSIndustrialAIuse cases which support LLMs, pre-trained, and trainable models directly into Workflow designs. This empowers Workflow Authors to leverage advancedAIcapabilities in a low-code/no-code environment, driving smarter and more productive business process ...",
+      "descriptionOfUse": "This guide provides instructions for connecting an existing remotely deployedIFSCloud environment to theAIplatform as a tenant. Overview TheintegrationbetweenIFSCloud andIFSAIplatform enables secure communication via modern OAuth 2.0 authentication mechanisms betweenIFSRemote Tenants and IFAAIServices.",
+      "activityPlanned": null,
+      "enterpriseCode": "Instrumentation",
+      "category": "7. Research & Knowledge",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "3. Demo Phase",
+      "championOwner": "Steve.Krechmery@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://docs.ifs.com/techdocs/25r2/070_remote_deploy/600_connecting_to_ifsai/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Knowledge Retrieval"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "03 – Demo / Evaluation"
+      }
+    },
+    {
+      "toolId": "TL072",
+      "origId": "AP2",
+      "oldSharePointId": "2",
+      "sysIdSNOW": null,
+      "toolName": "Ahrefs",
+      "descriptionOfTool": "Use cases ofAhrefs'ProductDescriptionGenerator E-commerce and online retail.Ahrefs'ProductDescriptionGenerator is an invaluabletoolfor e-commerce businesses and online retailers. It assists in creating compelling and persuasive productdescriptionsfor a wide range of products.",
+      "descriptionOfUse": "What makesAhrefsstand out? Here are 16Ahrefsunique features that will increase yourAIvisibility and automate your marketing tasks.",
+      "activityPlanned": null,
+      "enterpriseCode": "Instrumentation",
+      "category": "4. Sales & Marketing Content",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Guy.Frankland@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://ahrefs.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "Sales & Marketing",
+        "Content Creation"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    },
+    {
+      "toolId": "TL073",
+      "origId": "AP1",
+      "oldSharePointId": "1",
+      "sysIdSNOW": null,
+      "toolName": "Agility",
+      "descriptionOfTool": "Digital.aiAgilityDigital.aiAgilityisan industry-leading enterprise-grade agile planning software solution that drives consistency and efficiency by scaling agile practices across all levels, from teams to the entire product portfolio to ensure that your applications are delivered on time and within scope.",
+      "descriptionOfUse": "This topic explains the basics ofAgilityDigital.aiAgilityBasicsUsethis guide to learn basics,howit works, andhowyou canuseit to support your Agile practice. Concepts Understanding Digital.aiAgilityUser Interface Understanding Roles and Project Membership Understanding System (All Projects) References Digital.aiAgilityPortfolio Product",
+      "activityPlanned": null,
+      "enterpriseCode": "Enterprise",
+      "category": "6. AI in Workflow",
+      "typeOfSolution": "1. AI Platform",
+      "vendor": null,
+      "status": "2. Interest Phase",
+      "championOwner": "Joe.Clifford@Teledyne.com",
+      "RiskAssessmentSubmitted": false,
+      "BusinessOwner": null,
+      "ToolURL": "https://www.agilityrobotics.com/",
+      "ToolImageURL": null,
+      "useCases": [
+        "TBD"
+      ],
+      "notes": null,
+      "legacyData": {
+        "activityStage": "10 - Assessing",
+        "pipelineStatus": "02 – Under Review"
+      }
+    }
+  ],
+  "metadata": {
+    "version": "3.0",
+    "lastUpdated": "2026-01-16",
+    "totalTools": 73,
+    "description": "AI Tool Library - Master data file with field options and descriptions. All 73 AI Platform projects migrated from CSV."
+  }
+}

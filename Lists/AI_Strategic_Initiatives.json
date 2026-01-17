@@ -1,0 +1,404 @@
+{
+  "fieldOptions": {
+    "executiveSponsor": [
+      {
+        "value": "CEO",
+        "description": "Chief Executive Officer",
+        "focusAreas": "Enterprise transformation, strategy"
+      },
+      {
+        "value": "CFO",
+        "description": "Chief Financial Officer",
+        "focusAreas": "Financial systems, M&A, ROI"
+      },
+      {
+        "value": "CIO",
+        "description": "Chief Information Officer",
+        "focusAreas": "IT, governance, enterprise tools"
+      },
+      {
+        "value": "CTO",
+        "description": "Chief Technology Officer",
+        "focusAreas": "Product tech, R&D, engineering"
+      },
+      {
+        "value": "COO",
+        "description": "Chief Operating Officer",
+        "focusAreas": "Operations, cross-functional"
+      },
+      {
+        "value": "CHRO",
+        "description": "Chief Human Resources Officer",
+        "focusAreas": "Workforce, training, EX"
+      },
+      {
+        "value": "General Counsel",
+        "description": "General Counsel",
+        "focusAreas": "Legal, compliance, contracts"
+      }
+    ],
+    "strategicObjective": [
+      {
+        "value": "Operational Excellence",
+        "description": "Improve processes, reduce costs"
+      },
+      {
+        "value": "Risk Management",
+        "description": "Reduce risk, ensure compliance"
+      },
+      {
+        "value": "Innovation",
+        "description": "New capabilities & opportunities"
+      },
+      {
+        "value": "Workforce Enablement",
+        "description": "Employee productivity & skills"
+      },
+      {
+        "value": "Customer Experience",
+        "description": "Customer satisfaction & service"
+      },
+      {
+        "value": "Revenue Growth",
+        "description": "Increase sales/revenue"
+      },
+      {
+        "value": "Cost Reduction",
+        "description": "Reduce operating costs"
+      }
+    ],
+    "impactCategory": [
+      {
+        "value": "Financial",
+        "description": "Direct financial impact (revenue, cost, profit)"
+      },
+      {
+        "value": "Operational",
+        "description": "Process efficiency and productivity gains"
+      },
+      {
+        "value": "Customer",
+        "description": "Customer satisfaction and retention"
+      },
+      {
+        "value": "Employee",
+        "description": "Employee productivity and satisfaction"
+      },
+      {
+        "value": "Strategic",
+        "description": "Long-term strategic positioning"
+      },
+      {
+        "value": "Compliance",
+        "description": "Regulatory and compliance adherence"
+      },
+      {
+        "value": "Innovation",
+        "description": "New capabilities and competitive edge"
+      }
+    ],
+    "status": [
+      {
+        "value": "Ideation",
+        "description": "Concept stage; exploring feasibility"
+      },
+      {
+        "value": "In Development",
+        "description": "Actively being built"
+      },
+      {
+        "value": "Pilot",
+        "description": "Limited deployment for testing"
+      },
+      {
+        "value": "In Production",
+        "description": "Fully deployed and operational"
+      },
+      {
+        "value": "On Hold",
+        "description": "Temporarily paused"
+      }
+    ],
+    "stage": [
+      {
+        "value": "Explore",
+        "description": "Research; evaluating options"
+      },
+      {
+        "value": "Build",
+        "description": "Active development in progress"
+      },
+      {
+        "value": "Pilot",
+        "description": "Testing with select users"
+      },
+      {
+        "value": "Scale",
+        "description": "Expanding deployment & reach"
+      },
+      {
+        "value": "Sunset",
+        "description": "Winding down; end-of-life"
+      }
+    ],
+    "riskLevel": [
+      {
+        "value": "Low",
+        "description": "Well-understood tech, clear path",
+        "criteria": "Well-understood tech, clear path"
+      },
+      {
+        "value": "Medium",
+        "description": "Some uncertainty, review needed",
+        "criteria": "Some uncertainty, review needed"
+      },
+      {
+        "value": "High",
+        "description": "Novel tech, sensitive data, complex",
+        "criteria": "Novel tech, sensitive data, complex"
+      }
+    ],
+    "complianceRequirements": [
+      {
+        "value": "SOC2",
+        "description": "Security & privacy controls"
+      },
+      {
+        "value": "GDPR",
+        "description": "EU data privacy regulation"
+      },
+      {
+        "value": "DFARS",
+        "description": "Defense contractor cybersecurity"
+      },
+      {
+        "value": "Data Privacy",
+        "description": "Internal data privacy policies"
+      },
+      {
+        "value": "Code Security",
+        "description": "Security review for AI code"
+      },
+      {
+        "value": "DLP",
+        "description": "Data loss prevention controls"
+      }
+    ]
+  },
+  "initiatives": [
+    {
+      "initiativeId": "SI090",
+      "origId": "90",
+      "oldSharePointId": "90",
+      "initiativeName": "Enterprise AI Framework",
+      "executiveSponsor": "CIO",
+      "businessOwner": "Matthew Mueller",
+      "strategicObjective": "Risk Management",
+      "impactCategory": [
+        "Compliance",
+        "Strategic"
+      ],
+      "status": "In Production",
+      "stage": "Scale",
+      "investment": 200000,
+      "expectedROI": "Target level of",
+      "riskLevel": "Medium",
+      "complianceRequirements": [
+        "SOC2"
+      ],
+      "technologyPlatform": "Azure Secure ITSS Core",
+      "projectTeam": null,
+      "startDate": "2024-01-01",
+      "targetLaunch": "2024-06-01",
+      "currentMilestone": "Framework compliance in baseline",
+      "keyMetrics": "% agentic AI LLM",
+      "usersReach": null,
+      "dependencies": null,
+      "notes": "Monthly compliance review ongoing"
+    },
+    {
+      "initiativeId": "SI084",
+      "origId": "84",
+      "oldSharePointId": "84",
+      "initiativeName": "SAIL Program - M365 Copilot Enablement",
+      "executiveSponsor": "CIO",
+      "businessOwner": "Nicholas Sawyer",
+      "strategicObjective": "Workforce Enablement",
+      "impactCategory": [
+        "Employee",
+        "Operational"
+      ],
+      "status": "In Production",
+      "stage": "Scale",
+      "investment": 350000,
+      "expectedROI": "3-4 hrs saved per week",
+      "riskLevel": "Low",
+      "complianceRequirements": [
+        "Data Privacy"
+      ],
+      "technologyPlatform": "Microsoft Cross-functional",
+      "projectTeam": null,
+      "startDate": "2024-06-01",
+      "targetLaunch": "2025-06-01",
+      "currentMilestone": "847 active users",
+      "keyMetrics": "Hours saved/user/week; active users; 8473 user License pr 1,401+ feedback submissions; +64% active users",
+      "usersReach": "847 active users",
+      "dependencies": null,
+      "notes": null
+    },
+    {
+      "initiativeId": "SI076",
+      "origId": "76",
+      "oldSharePointId": "76",
+      "initiativeName": "AI Champions Network",
+      "executiveSponsor": "COO",
+      "businessOwner": "Colin Butler",
+      "strategicObjective": "Innovation",
+      "impactCategory": [
+        "Innovation",
+        "Employee"
+      ],
+      "status": "In Production",
+      "stage": "Scale",
+      "investment": 150000,
+      "expectedROI": "Request Approval",
+      "riskLevel": "Low",
+      "complianceRequirements": [],
+      "technologyPlatform": "SharePoint/Champion",
+      "projectTeam": null,
+      "startDate": "2024-03-01",
+      "targetLaunch": null,
+      "currentMilestone": "Framework Reviews",
+      "keyMetrics": "BU reports submitted; champion eng AI Usage",
+      "usersReach": "Decade; multiple sub-groups: Marine, Legal, HR, Con",
+      "dependencies": null,
+      "notes": null
+    },
+    {
+      "initiativeId": "SI153",
+      "origId": "153",
+      "oldSharePointId": "153",
+      "initiativeName": "Intelligent M&A AI",
+      "executiveSponsor": "CFO",
+      "businessOwner": "Corp Development",
+      "strategicObjective": "Operational Excellence",
+      "impactCategory": [
+        "Financial",
+        "Operational"
+      ],
+      "status": "In Production",
+      "stage": "Scale",
+      "investment": 450000,
+      "expectedROI": "$2M at a Low plus Medium",
+      "riskLevel": "Medium",
+      "complianceRequirements": [
+        "SOC2"
+      ],
+      "technologyPlatform": "Azure OpenAI",
+      "projectTeam": "5 FTE, 3 contractors",
+      "startDate": "2024-01-01",
+      "targetLaunch": "2024-11-15",
+      "currentMilestone": "$200,000/$2M/02025 MVP Tests",
+      "keyMetrics": "20% reduction in M&A processing time; research accuracy 20% improvement",
+      "usersReach": "VBA and Public tester from CFO/M&A team",
+      "dependencies": null,
+      "notes": null
+    },
+    {
+      "initiativeId": "SI089",
+      "origId": "89",
+      "oldSharePointId": "89",
+      "initiativeName": "GitHub Copilot Enterprise Rollout",
+      "executiveSponsor": "CTO",
+      "businessOwner": "Matthew Mueller",
+      "strategicObjective": "Operational Excellence",
+      "impactCategory": [
+        "Operational",
+        "Employee"
+      ],
+      "status": "In Production",
+      "stage": "Scale",
+      "investment": 500000,
+      "expectedROI": "20-30% defect reduction",
+      "riskLevel": "Low",
+      "complianceRequirements": [
+        "Code Security"
+      ],
+      "technologyPlatform": "GitHub CO2 Engineering",
+      "projectTeam": null,
+      "startDate": "2024-02-01",
+      "targetLaunch": "2025-06-01",
+      "currentMilestone": "Enterprise rollout",
+      "keyMetrics": "Developer productivity; time-to-market; 250+ developer License in High adoption; expanding licensea",
+      "usersReach": "250+ developers",
+      "dependencies": null,
+      "notes": null
+    },
+    {
+      "initiativeId": "SI001",
+      "origId": "1",
+      "oldSharePointId": "1",
+      "initiativeName": "AI at Large Case Audit",
+      "executiveSponsor": "COO",
+      "businessOwner": "TBD",
+      "strategicObjective": "Risk Management",
+      "impactCategory": [
+        "Innovation",
+        "Compliance"
+      ],
+      "status": "Pilot",
+      "stage": "Pilot",
+      "investment": 175000,
+      "expectedROI": "Fast ROI at Medium",
+      "riskLevel": "Medium",
+      "complianceRequirements": [
+        "Data Privacy"
+      ],
+      "technologyPlatform": "BI, Cross-functional",
+      "projectTeam": null,
+      "startDate": "2025-01-01",
+      "targetLaunch": "2025-05-30",
+      "currentMilestone": "Audit in Large AI use Staged",
+      "keyMetrics": "2 MOA art will be saved; 4-month cross-team pilot in Legal & BI",
+      "usersReach": null,
+      "dependencies": null,
+      "notes": null
+    },
+    {
+      "initiativeId": "SI075",
+      "origId": "75",
+      "oldSharePointId": "75",
+      "initiativeName": "AI Agent Deployment Framework",
+      "executiveSponsor": "CIO",
+      "businessOwner": "Matthew Mueller",
+      "strategicObjective": "Risk Management",
+      "impactCategory": [
+        "Compliance",
+        "Strategic"
+      ],
+      "status": "Pilot",
+      "stage": "Pilot",
+      "investment": 125000,
+      "expectedROI": "Risk mitigation",
+      "riskLevel": "Low",
+      "complianceRequirements": [
+        "DLP"
+      ],
+      "technologyPlatform": "Human-Copilot ITSS Governance",
+      "projectTeam": null,
+      "startDate": "2024-09-01",
+      "targetLaunch": "2025-06-01",
+      "currentMilestone": "Stage-gate",
+      "keyMetrics": "% agents deployed under governance; All agent C Governance",
+      "usersReach": null,
+      "dependencies": null,
+      "notes": "Includes risk analysis and DLP guardrails"
+    }
+  ],
+  "metadata": {
+    "version": "2.0",
+    "lastUpdated": "2026-01-16",
+    "totalInitiatives": 7,
+    "description": "AI Strategic Initiatives - C-level sponsored enterprise AI programs with significant business impact"
+  }
+}

@@ -1,0 +1,484 @@
+{
+  "fieldOptions": {
+    "businessSegment": {
+      "referenceHelper": "See Lists/Org_Structure.json for full hierarchy",
+      "optionsSource": "externalSegment"
+    },
+    "projectType": [
+      {
+        "value": "Custom Solution",
+        "description": "Bespoke AI for specific business need"
+      },
+      {
+        "value": "Experiment/POC",
+        "description": "Proof of concept to test feasibility"
+      },
+      {
+        "value": "Tool Integration",
+        "description": "Commercial AI tools to internal systems"
+      },
+      {
+        "value": "Product",
+        "description": "AI embedded in customer products"
+      },
+      {
+        "value": "Process Enhancement",
+        "description": "AI to improve internal processes"
+      }
+    ],
+    "useCaseCategory": [
+      {
+        "value": "Knowledge Search",
+        "description": "Finding info documents/data"
+      },
+      {
+        "value": "Document Processing",
+        "description": "Analyzing, extracting from docs"
+      },
+      {
+        "value": "Customer Support",
+        "description": "Chatbots and service agents"
+      },
+      {
+        "value": "Content Generation",
+        "description": "Creating marketing/sales content"
+      }
+    ],
+    "status": [
+      {
+        "value": "Ideation",
+        "description": "Concept stage; exploring feasibility"
+      },
+      {
+        "value": "In Development",
+        "description": "Actively being built"
+      },
+      {
+        "value": "Pilot",
+        "description": "Limited deployment for testing"
+      },
+      {
+        "value": "In Production",
+        "description": "Fully deployed and operational"
+      },
+      {
+        "value": "On Hold",
+        "description": "Temporarily paused"
+      },
+      {
+        "value": "Cancelled",
+        "description": "Project terminated"
+      }
+    ],
+    "stage": [
+      {
+        "value": "Explore",
+        "description": "Research; evaluating options"
+      },
+      {
+        "value": "Build",
+        "description": "Active development in progress"
+      },
+      {
+        "value": "Pilot",
+        "description": "Testing with select users"
+      },
+      {
+        "value": "Scale",
+        "description": "Expanding deployment & reach"
+      },
+      {
+        "value": "Sunset",
+        "description": "Winding down; end-of-life"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "projectId": "AP125",
+      "origId": 125,
+      "oldSharePointId": 125,
+      "projectName": "Contract Assistant",
+      "businessSegment": "Engineered Systems",
+      "projectType": "Custom Solution",
+      "useCaseCategory": "Document Processing",
+      "status": "In Production",
+      "stage": "Scale",
+      "aiChampion": "Sarah Green",
+      "techStack": ["Azure OpenAI", "Copilot Studio"],
+      "startDate": "2024-03-15",
+      "productionDate": "2024-09-10",
+      "users": 45,
+      "estimatedValue": 125000,
+      "briefDescription": "AI assistant for contract administration to highlight the contract lifecycle",
+      "keyResults": "50% faster review time",
+      "notes": "High adoption across Contracts"
+    },
+    {
+      "projectId": "AP164",
+      "origId": 164,
+      "oldSharePointId": 164,
+      "projectName": "Sales Enablement Agent",
+      "businessSegment": "Engineered Systems",
+      "projectType": "Custom Solution",
+      "useCaseCategory": "Knowledge Search",
+      "status": "In Development",
+      "stage": "Build",
+      "aiChampion": "Wilson Reed",
+      "techStack": ["Copilot Studio", "SharePoint"],
+      "startDate": "2024-12-19",
+      "productionDate": null,
+      "users": 30,
+      "estimatedValue": 85000,
+      "briefDescription": "AI agent to help find sales agent for TSI Group",
+      "keyResults": "Improved auto-response time",
+      "notes": null
+    },
+    {
+      "projectId": "AP162",
+      "origId": 162,
+      "oldSharePointId": 162,
+      "projectName": "Contract Risk Screening",
+      "businessSegment": "Engineered Systems",
+      "projectType": "Custom Solution",
+      "useCaseCategory": "Document Processing",
+      "status": "In Development",
+      "stage": "Build",
+      "aiChampion": "David Trausch",
+      "techStack": ["Azure OpenAI"],
+      "startDate": "2024-12-01",
+      "productionDate": null,
+      "users": null,
+      "estimatedValue": 60000,
+      "briefDescription": "Screen contract language and specific risk, only routine business risks",
+      "keyResults": "Q1 2026 implementation target",
+      "notes": null
+    },
+    {
+      "projectId": "AP157",
+      "origId": 157,
+      "oldSharePointId": 157,
+      "projectName": "Business Reporting AI",
+      "businessSegment": "Instrumentation",
+      "projectType": "Custom Solution",
+      "useCaseCategory": "Knowledge Search",
+      "status": "In Development",
+      "stage": "Build",
+      "aiChampion": "Victoria Fletcher",
+      "techStack": ["GitHub"],
+      "startDate": "2025-01-17",
+      "productionDate": null,
+      "users": null,
+      "estimatedValue": 15000,
+      "briefDescription": "Screen business data and provide daily business updates with information",
+      "keyResults": "Local deployment",
+      "notes": null
+    },
+    {
+      "projectId": "AP153",
+      "origId": 153,
+      "oldSharePointId": 153,
+      "projectName": "M&A Research Agent",
+      "businessSegment": "Aerospace & Defense",
+      "projectType": "Custom Solution",
+      "useCaseCategory": "Knowledge Search",
+      "status": "Pilot",
+      "stage": "Pilot",
+      "aiChampion": "Corp Dev Team",
+      "techStack": ["Copilot Studio"],
+      "startDate": "2024-11-21",
+      "productionDate": null,
+      "users": 20,
+      "estimatedValue": 200000,
+      "briefDescription": "Gather public information and generate investment memos for M&A targets",
+      "keyResults": "Reduce research time from 2-3 days to 1 hour",
+      "notes": "Under review"
+    },
+    {
+      "projectId": "AP79",
+      "origId": 79,
+      "oldSharePointId": 79,
+      "projectName": "Quality Product Agent",
+      "businessSegment": "Marine",
+      "projectType": "Product",
+      "useCaseCategory": "Customer Support",
+      "status": "Pilot",
+      "stage": "Pilot",
+      "aiChampion": "Justin Kretschmar",
+      "techStack": ["Copilot Studio"],
+      "startDate": "2024-09-01",
+      "productionDate": null,
+      "users": 15,
+      "estimatedValue": 75000,
+      "briefDescription": "AI-powered support for WMM network troubleshooting",
+      "keyResults": "Deflection and cost avoidance/troubleshooting",
+      "notes": "PoC v1 2025"
+    },
+    {
+      "projectId": "AP77",
+      "origId": 77,
+      "oldSharePointId": 77,
+      "projectName": "BlueSky AI Copilot",
+      "businessSegment": "ITSS",
+      "projectType": "Tool Integration",
+      "useCaseCategory": "Customer Support",
+      "status": "In Development",
+      "stage": "Pilot",
+      "aiChampion": "Serenity Atwell",
+      "techStack": ["BlueSky", "Salesforce"],
+      "startDate": "2024-09-01",
+      "productionDate": null,
+      "users": 3,
+      "estimatedValue": 10000,
+      "briefDescription": "BlueSky AI for support engineers to find information",
+      "keyResults": "Enhanced self-service troubleshooting",
+      "notes": "Solution testing"
+    },
+    {
+      "projectId": "AP95",
+      "origId": 95,
+      "oldSharePointId": 95,
+      "projectName": "Buildsys AI",
+      "businessSegment": "Digital Imaging",
+      "projectType": "Custom Solution",
+      "useCaseCategory": "Customer Support",
+      "status": "Pilot",
+      "stage": "Pilot",
+      "aiChampion": "Dominic Carrier",
+      "techStack": ["Approved Stack"],
+      "startDate": "2024-07-01",
+      "productionDate": null,
+      "users": 25,
+      "estimatedValue": 45000,
+      "briefDescription": "AI-Dive Engineering Companion ChatBot",
+      "keyResults": "Engineer self-service as knowledge agent",
+      "notes": "Solution testing"
+    },
+    {
+      "projectId": "AP109",
+      "origId": 109,
+      "oldSharePointId": 109,
+      "projectName": "Dualloom Prediction",
+      "businessSegment": "Digital Imaging",
+      "projectType": "Custom Solution",
+      "useCaseCategory": "Knowledge Search",
+      "status": "In Production",
+      "stage": "Scale",
+      "aiChampion": "Jari Jarvinen",
+      "techStack": ["Copilot, Service"],
+      "startDate": "2025-04-01",
+      "productionDate": "2025-03-01",
+      "users": 40,
+      "estimatedValue": 90000,
+      "briefDescription": "Internal chatbot for product development cycles",
+      "keyResults": "90% reduction in development cycles",
+      "notes": "Multiple tools in use"
+    },
+    {
+      "projectId": "AP111",
+      "origId": 111,
+      "oldSharePointId": 111,
+      "projectName": "SignBase AI",
+      "businessSegment": "Digital Imaging",
+      "projectType": "Custom Solution",
+      "useCaseCategory": "Content Generation",
+      "status": "Pilot",
+      "stage": "Pilot",
+      "aiChampion": "Oliver Heel",
+      "techStack": ["Custom AI Platform"],
+      "startDate": "2024-05-01",
+      "productionDate": null,
+      "users": 10,
+      "estimatedValue": 150000,
+      "briefDescription": "AI machine vision experts for component selection",
+      "keyResults": "Q1-2025 target",
+      "notes": null
+    },
+    {
+      "projectId": "AP112",
+      "origId": 112,
+      "oldSharePointId": 112,
+      "projectName": "ACI Image Selection",
+      "businessSegment": "Marine",
+      "projectType": "Product",
+      "useCaseCategory": "Knowledge Search",
+      "status": "In Production",
+      "stage": "Scale",
+      "aiChampion": "Tim Brown",
+      "techStack": ["Custom ML"],
+      "startDate": "2025-01-01",
+      "productionDate": "2025-06-01",
+      "users": 6,
+      "estimatedValue": 600000,
+      "briefDescription": "AI-based image selection for the time-life objects in sonar data",
+      "keyResults": "$30M+ in related sonar sales",
+      "notes": "Embedded in sold products"
+    },
+    {
+      "projectId": "AP117",
+      "origId": 117,
+      "oldSharePointId": 117,
+      "projectName": "Energy Document Agent",
+      "businessSegment": "Engineered Systems",
+      "projectType": "Custom Solution",
+      "useCaseCategory": "Document Processing",
+      "status": "Pilot",
+      "stage": "Pilot",
+      "aiChampion": "Mariel Acamacion",
+      "techStack": ["Azure OpenAI"],
+      "startDate": "2024-09-01",
+      "productionDate": null,
+      "users": 15,
+      "estimatedValue": 50000,
+      "briefDescription": "Build-on based solution that extracts energy usage",
+      "keyResults": "No plan to deploy into scale",
+      "notes": "In force"
+    },
+    {
+      "projectId": "AP128",
+      "origId": 128,
+      "oldSharePointId": 128,
+      "projectName": "5S Gap Sorting Bot",
+      "businessSegment": "TBD",
+      "projectType": "Experiment/POC",
+      "useCaseCategory": "Process Enhancement",
+      "status": "Pilot",
+      "stage": "Pilot",
+      "aiChampion": "Elisa Fontaine",
+      "techStack": ["Custom Rules Engine"],
+      "startDate": "2024-09-01",
+      "productionDate": null,
+      "users": 5,
+      "estimatedValue": 30000,
+      "briefDescription": "Automatically review and prioritize 5S/Health & Safety audit gaps",
+      "keyResults": "Eliminates human bias in scoring",
+      "notes": "No force"
+    },
+    {
+      "projectId": "AP116",
+      "origId": 116,
+      "oldSharePointId": 116,
+      "projectName": "AH Sales Integration",
+      "businessSegment": "Enterprise",
+      "projectType": "Tool Integration",
+      "useCaseCategory": "Content Generation",
+      "status": "In Production",
+      "stage": "Pilot",
+      "aiChampion": "Time Hanson",
+      "techStack": ["Dynamics 365 Copilot"],
+      "startDate": "2025-01-01",
+      "productionDate": "2025-03-01",
+      "users": 0,
+      "estimatedValue": 200000,
+      "briefDescription": "D365 AH for Guided Grace 5 TSE business development & sales missions",
+      "keyResults": "30% reduction in capture system",
+      "notes": "Q1-2025 initial"
+    },
+    {
+      "projectId": "AP61",
+      "origId": 61,
+      "oldSharePointId": 61,
+      "projectName": "Copilot for Sales",
+      "businessSegment": "Enterprise",
+      "projectType": "Tool Integration",
+      "useCaseCategory": "Content Generation",
+      "status": "Pilot",
+      "stage": "Pilot",
+      "aiChampion": "IT Team",
+      "techStack": ["Dynamics 365, Copilot"],
+      "startDate": "2024-10-01",
+      "productionDate": null,
+      "users": 50,
+      "estimatedValue": 100000,
+      "briefDescription": "AI assistant for sales teams using Dynamics 365",
+      "keyResults": "Save time on CRM tasks",
+      "notes": "Rolling out Q2 2025"
+    },
+    {
+      "projectId": "AP42",
+      "origId": 42,
+      "oldSharePointId": 42,
+      "projectName": "CSIF SAE Agents",
+      "businessSegment": "Engineered Systems",
+      "projectType": "Custom Solution",
+      "useCaseCategory": "Knowledge Search",
+      "status": "In Production",
+      "stage": "Pilot",
+      "aiChampion": "Charlie Hunt",
+      "techStack": ["Copilot Studio, SharePoint"],
+      "startDate": "2024-03-01",
+      "productionDate": "2024-10-15",
+      "users": 25,
+      "estimatedValue": 75000,
+      "briefDescription": "SLM for ASME code research (ASME, NQAI-1)",
+      "keyResults": "Faster background; reduced knowledge gaps",
+      "notes": "Shared with Quality Dept"
+    },
+    {
+      "projectId": "AP49",
+      "origId": 49,
+      "oldSharePointId": 49,
+      "projectName": "CoPilot Sales ForceMultiplier",
+      "businessSegment": "Instrumentation",
+      "projectType": "Tool Integration",
+      "useCaseCategory": "Content Generation",
+      "status": "Pilot",
+      "stage": "Pilot",
+      "aiChampion": "William Elmstt",
+      "techStack": ["Copilot, Dynamics 365"],
+      "startDate": "2024-09-01",
+      "productionDate": null,
+      "users": 5,
+      "estimatedValue": 25000,
+      "briefDescription": "CoPilot sales force multiplier for Roper Energy System",
+      "keyResults": "Getting D20 units",
+      "notes": "Evaluating MCP approach"
+    },
+    {
+      "projectId": "AP134",
+      "origId": 134,
+      "oldSharePointId": 134,
+      "projectName": "Connect AI Agents to Copilot",
+      "businessSegment": "Maritime",
+      "projectType": "Product",
+      "useCaseCategory": "Knowledge Search",
+      "status": "Ideation",
+      "stage": "Explore",
+      "aiChampion": "Wolf, Jiao",
+      "techStack": ["Copilot, Confluence MCP"],
+      "startDate": null,
+      "productionDate": null,
+      "users": null,
+      "estimatedValue": 25000,
+      "briefDescription": "Connect Confluence project data to Copilot",
+      "keyResults": null,
+      "notes": "In force"
+    },
+    {
+      "projectId": "AP129",
+      "origId": 129,
+      "oldSharePointId": 129,
+      "projectName": "GitHub Copilot Chat",
+      "businessSegment": "TBD",
+      "projectType": "Custom Solution",
+      "useCaseCategory": "Document Processing",
+      "status": "Pilot",
+      "stage": "Pilot",
+      "aiChampion": "Theo Hill",
+      "techStack": ["GitHub Copilot"],
+      "startDate": null,
+      "productionDate": null,
+      "users": 6,
+      "estimatedValue": 15000,
+      "briefDescription": "Train chat with internal and external efficiency",
+      "keyResults": "Gain tool programmer hours",
+      "notes": null
+    }
+  ],
+  "metadata": {
+    "version": "2.0",
+    "lastUpdated": "2026-01-16",
+    "totalProjects": 20,
+    "description": "AI Project Portfolio - Master data file tracking all AI initiatives across Teledyne"
+  }
+}
