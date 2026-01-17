@@ -1,109 +1,203 @@
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#4A90E2'}}}%%
-flowchart TB
-    %% Phase 0: Required Inputs
-    subgraph Phase0["Phase 0: Required Inputs"]
-        style Phase0 fill:#4A90E2,color:#fff
-        0.1[Business Case Documentation]
-        0.2[Initial Risk Assessment]
-        0.3[Stakeholder Identification]
-        0.4[Budget Estimation]
-    end
 
-    %% Phase 1: Request Phase
-    subgraph Phase1["Phase 1.0: Request Phase"]
-        style Phase1 fill:#7B4397,color:#fff
-        1.1[Submit AI Software Request]
-        1.2[IT Security Review]
-        1.3[Initial Compliance Check]
-        1.4{Request Approved?}
-    end
+%%{init: {'flowchart': {'htmlLabels': false, 'wrap': false}, 'theme': 'base'}}%%
+flowchart LR
 
-    %% Phase 2: Interest Phase
-    subgraph Phase2["Phase 2.0: Interest Phase"]
-        style Phase2 fill:#1B9B8E,color:#fff
-        2.1[AI Board Review]
-        2.2[Multi-Business Interest Evaluation]
-        2.3[Strategic Alignment Check]
-        2.4{Proceed to Demo?}
-    end
+subgraph INPUTS["**0. Required Inputs**"]
+    direction TB
+    IN1@{ shape: doc, label: "0.1. Placeholder Input 1" }
+    IN2@{ shape: doc, label: "0.2. Placeholder Input 2" }
+    IN3@{ shape: doc, label: "0.3. Placeholder Input 3" }
+    IN4@{ shape: doc, label: "0.4. Placeholder Input 4" }
+    IN5@{ shape: doc, label: "0.5. Placeholder Input 5" }
+    IN1 ~~~ IN2 ~~~ IN3 ~~~ IN4 ~~~ IN5
+end
 
-    %% Phase 3: Demo Phase
-    subgraph Phase3["Phase 3.0: Demo Phase"]
-        style Phase3 fill:#00A0E9,color:#fff
-        3.1[Schedule Vendor Demo]
-        3.2[Conduct Demo Session]
-        3.3[Stakeholder Feedback]
-        3.4{Demo Approved?}
-    end
+subgraph REQUEST["**1.0. Request Phase**"]
+    direction TB
+    INM1("Email/Web Portal")
+    INM2("ServiceNow Ticket")
+    INM1 --> A0
+    INM2 --> A0
+    A0[/"1.1. Request Submitted"/]
+    A0 --> A0b{"1.2. What type of request?"}
+    A0b -->|Product| A1{"1.3. Is there an existing approved application for this function?"}
+    %% Link #
+    A0b -->|Function| A2{"1.4. Is this the existing approved application?"}
+    A1 -->|No| B0a("1.5. Select an applicable market leader")
+    B0a --> B1[["1.10. Initial IT and Security Review"]]
+    A1 -->|Yes| A3["1.6. License Allocation or Procurement"]
+    A3 --> A3a[["1.7. User submit software request 🔗"]]
+    A2 -->|Yes| A3
+    A2 -->|No| B0b{"1.8. Is the application on the denied software list?"}
+    B0b -->|Yes| B5(["1.9. Denied - on denied list"])
+    B0b -->|No| B1
+    B1 --> B2{"1.11. Does the application pass initial Security and Compliance checks?"}
+    B2 -->|No| B2n(["1.13. Notify Requestor - Security Check Failed"])
+    B2 -->|Yes| B3@{ shape: delay, label: "1.12. Interest Phase" }
+end
 
-    %% Phase 4: Pilot Phase
-    subgraph Phase4["Phase 4.0: Pilot Phase"]
-        style Phase4 fill:#D4A017,color:#fff
-        4.1[Define Success Criteria]
-        4.2[Setup Pilot Environment]
-        4.3[Execute Pilot]
-        4.4[Evaluate Results]
-        4.5{Pilot Successful?}
-    end
+subgraph INTEREST["**2.0. Interest Phase**"]
+    direction TB
+    C0[["2.1. AI Board Review"]]
+    C0 --> C1{"2.2. Is there interest from more than one business?"}
+    C1 -->|No| C2{"2.3. Does the AI Board approve the effort for a single business?"}
+    C2 -->|Yes| C5@{ shape: delay, label: "2.4. Demo Phase" }
+    C2 -->|No| C2n(["2.5. Notify Requestor - Single Business Not Approved"])
+end
 
-    %% Phase 5: Formal Request
-    subgraph Phase5["Phase 5.0: Formal Request"]
-        style Phase5 fill:#945491,color:#fff
-        5.1[Develop Business Case]
-        5.2[ROI Analysis]
-        5.3[Leadership Review]
-        5.4{Approved for Implementation?}
-    end
+subgraph DEMO["**3.0. Demo Phase**"]
+    direction TB
+    D0@{ shape: rounded, label: "3.1. Notification to AI Governance" }
+    D0 --> D1("3.2. Requester schedules demo with Vendor, IT, Security, AI Board, AI Committee")
+    D1 --> D2{"3.6. Interest to move into Pilot phase?"}
+    D2 -->|Yes| D2a[["3.3. Pilot Cost Approval by Requestor"]]
+    D2 -->|Yes| D2b[["3.4. IT & Security Approval"]]
+    D2 -->|Yes| D2c[["3.5. AI Governance Legal/Compliance/Ethics Approval"]]
+    D2 -->|Yes| D2d[["3.7. Approval (Split cost between those interested)"]]
+    D2 -->|No| D2n(["3.13. Notify Requestor - No Interest for Pilot"])
+    D2a --> D2a1{"3.8. Is Cost Approved?"}
+    D2b --> D2b1{"3.9. Is IT and Security Approved?"}
+    D2c --> D2c1{"3.10. Is Governance Approved?"}
+    D2d --> D2d1{"3.11. Is Cost Allocation Approved?"}
+    D2a1 -->|No| D2n
+    D2b1 -->|No| D2n
+    D2c1 -->|No| D2n
+    D2d1 -->|No| D2n
+    D2b1 -->|Yes| D3@{ shape: delay, label: "3.12. Pilot Phase" }
+    D2c1 -->|Yes| D3@{ shape: delay, label: "3.12. Pilot Phase" }
+    D2d1 -->|Yes| D3@{ shape: delay, label: "3.12. Pilot Phase" }
+end
 
-    %% Phase 6: Implementation
-    subgraph Phase6["Phase 6.0: Implementation"]
-        style Phase6 fill:#1E3A5F,color:#fff
-        6.1[Architecture Review]
-        6.2[Procurement Process]
-        6.3[Deployment Planning]
-        6.4[Go-Live]
-    end
+subgraph PILOT["**4.0. Pilot Phase**"]
+    direction TB
+    E4("4.1. Define Success Criteria for Pilot")
+    E4 --> E5("4.2. Pilot Process with Vendor")
+    E5 --> E6{"4.3. Did the Pilot deliver on our Success Criteria?"}
+    E6 -->|Yes| E6a@{ shape: delay, label: "4.4. Formal Request Phase" }
+    E6 -->|No| E6b(["4.5. Notify Requestor - Pilot Failed"])
+end
 
-    %% Phase 7: Continuous Evaluation
-    subgraph Phase7["Phase 7.0: Continuous Evaluation"]
-        style Phase7 fill:#7CB342,color:#fff
-        7.1[Monitor Success Criteria]
-        7.2[Quarterly Review]
-        7.3[Continuous Improvement]
-        7.4{Continue Operation?}
-    end
+subgraph FORMAL["**5.0. Formal Request**"]
+    direction TB
+    F0[["5.1. AI Board Review"]]
+    F0 --> F0b[["5.2. AI Governance Committee Review"]]
+    F0b --> F3{"5.3. Is there interest from more than one business?"}
+    F3 -->|Yes| F1("5.5. Develop Business Case")
+    F3 -->|No| F3a{"5.4. Is Single Business Approved?"}
+    F3a -->|No| F3an(["5.9. Notify Requestor - Single Business Not Approved"])
+    F3a -->|Yes| F6A("5.8. Notify AI Governance Committee - Implementation Approved")
+    F6A --> F6@{ shape: delay, label: "5.11. Implementation Phase" }
+    F1 --> F2[["5.6. Teledyne Senior Leadership Review"]]
+    F2 --> F5{"5.7. Is Enterprise-Wide Deployment Approved?"}
+    F5 -->|No| F5n(["5.10. Notify Requestor - Enterprise Deployment Not Approved"])
+    F5 -->|Yes| F6A
+end
 
-    %% Exit/Notification
-    subgraph Exit["Exit/Notification"]
-        style Exit fill:#FF7F7F,color:#fff
-        E1[Request Denied Notification]
-        E2[Project Terminated]
-    end
+subgraph IMPLEMENTATION["**6.0. Implementation**"]
+    direction TB
+    G1[["6.1. Architecture Review by ITSS, Business(es), Vendor"]]
+    G1 --> G2("6.2. Hardware/Software/Services Procurement")
+    G2 --> G3("6.3. Implementation and Testing")
+    G3 --> G4{"6.4. Is User Acceptance Testing Successful?"}
+    G4 -->|Yes| G6[["6.5. Production Deployment"]]
 
-    %% Flow connections
-    Phase0 --> 1.1
-    1.1 --> 1.2 --> 1.3 --> 1.4
-    1.4 -->|Yes| 2.1
-    1.4 -->|No| E1
+    G4 -->|No| G3
+    G6 --> G7@{ shape: delay, label: "6.6. Evaluation Phase" }
+end
 
-    2.1 --> 2.2 --> 2.3 --> 2.4
-    2.4 -->|Yes| 3.1
-    2.4 -->|No| E1
+subgraph EVALUATION["**7.0. Continuous Evaluation**"]
+    direction TB
+    H1("7.1. Periodic Review of Success Criteria")
+    H1 --> H2{"7.2. Is the product still meeting defined Success Criteria?"}
+    H2 -->|No| H3{"7.3. Is the function of the product still needed?"}
+    H2 -->|Yes| H2a("7.5. Schedule Next Period Review")
+    H3 -->|Yes| H1
+    H3 -->|No| H4(["7.4. Decommission Service"])
+end
 
-    3.1 --> 3.2 --> 3.3 --> 3.4
-    3.4 -->|Yes| 4.1
-    3.4 -->|No| E1
+subgraph LEGEND["**Legend: Shape Types**"]
+    direction TB
+    L1@{ shape: doc, label: "Document" }
+    L2[/"Input/Start"/]
+    L3("Process")
+    L4["Result/Data"]
+    L5[["Subprocess"]]
+    L6{"Decision"}
+    L7(["Exit/Notification"])
+    L8@{ shape: delay, label: "Phase Transition" }
+    L9@{ shape: rounded, label: "Event" }
+    %% L1 ~~~ L2 ~~~ L3 ~~~ L4 ~~~ L5 ~~~ L6 ~~~ L7 ~~~ L8 ~~~ L9
+end
 
-    4.1 --> 4.2 --> 4.3 --> 4.4 --> 4.5
-    4.5 -->|Yes| 5.1
-    4.5 -->|No| E2
+%% subgraph TEST["**8.0. Test**"]
+%%     direction TB
+%%     I1@{ img: "https://mermaid.js.org/favicon.svg", label: "Mermaid", pos: "b", h: 60, constraint: "on" }
+%%     I1 --> T2@{ img: "https://cdn.icon-icons.com/icons2/2699/PNG/512/servicenow_logo_icon_168837.png", label: "SNOW", pos: "b", h: 60, constraint: "on" }
+%% end
 
-    5.1 --> 5.2 --> 5.3 --> 5.4
-    5.4 -->|Yes| 6.1
-    5.4 -->|No| E2
+%% Styling for each phase
+classDef inputsStyle fill:#4A90E2,stroke:#333,stroke-width:2px,color:#fff
+classDef requestStyle fill:#7B4397,stroke:#333,stroke-width:2px,color:#fff
+classDef interestStyle fill:#1B9B8E,stroke:#333,stroke-width:2px,color:#fff
+classDef demoStyle fill:#00A0E9,stroke:#333,stroke-width:2px,color:#fff
+classDef pilotStyle fill:#D4A017,stroke:#333,stroke-width:2px,color:#000
+classDef formalStyle fill:#945491,stroke:#333,stroke-width:2px,color:#fff
+classDef implementationStyle fill:#1E3A5F,stroke:#333,stroke-width:2px,color:#fff
+classDef evaluationStyle fill:#7CB342,stroke:#333,stroke-width:2px,color:#fff
+classDef testStyle fill:#FF6B6B,stroke:#333,stroke-width:2px,color:#fff
+classDef legendStyle fill:#E0E0E0,stroke:#333,stroke-width:2px,color:#000
+classDef exitStyle fill:#FF7F7F,stroke:#333,stroke-width:2px,color:#000
+classDef clickableStyle fill:#7B4397,stroke:#333,stroke-width:2px,color:#fff
 
-    6.1 --> 6.2 --> 6.3 --> 6.4 --> 7.1
+%% Lighter shades for decision nodes
+classDef inputsDecision fill:#7BB8F5,stroke:#333,stroke-width:2px,color:#000
+classDef requestDecision fill:#B584D1,stroke:#333,stroke-width:2px,color:#fff
+classDef interestDecision fill:#5CC9BD,stroke:#333,stroke-width:2px,color:#000
+classDef demoDecision fill:#66C3F4,stroke:#333,stroke-width:2px,color:#000
+classDef pilotDecision fill:#E6C85C,stroke:#333,stroke-width:2px,color:#000
+classDef formalDecision fill:#B57FB1,stroke:#333,stroke-width:2px,color:#fff
+classDef implementationDecision fill:#4A6B9F,stroke:#333,stroke-width:2px,color:#fff
+classDef evaluationDecision fill:#A5D77E,stroke:#333,stroke-width:2px,color:#000
+classDef testDecision fill:#FF9999,stroke:#333,stroke-width:2px,color:#000
 
-    7.1 --> 7.2 --> 7.3 --> 7.4
-    7.4 -->|Yes| 7.1
-    7.4 -->|No| E2
+%% Apply styles to nodes
+class INM1,INM2 inputsStyle
+class IN1,IN2,IN3,IN4,IN5 inputsStyle
+class A0,B0a,A3,B3 requestStyle
+class B1,A3a clickableStyle
+class A0b,A1,A2,B0b,B2 requestDecision
+class C0,C5 interestStyle
+class C1,C2 interestDecision
+class D0,D1,D2a,D2b,D2c,D2d,D3, demoStyle
+class D2,D2a1,D2b1,D2c1,D2d1 demoDecision
+class E4,E5,E6a pilotStyle
+class E6 pilotDecision
+class F0,F0b,F1,F2,F6,F6A formalStyle
+class F3,F3a,F5 formalDecision
+class G1,G2,G3,G6,G7,G9 implementationStyle
+class G4 implementationDecision
+class H1,H2a evaluationStyle
+class H2,H3 evaluationDecision
+class L1,L2,L3,L4,L5,L6,L7,L8,L9 legendStyle
+class I1 testStyle
+class B5,H4,B2n,C2n,D2n,E6b,F3an,F5n exitStyle
+
+%% Cross-subgraph connections
+
+INPUTS --> REQUEST
+REQUEST --> INTEREST
+INTEREST --> DEMO
+DEMO --> PILOT
+PILOT --> FORMAL
+FORMAL --> IMPLEMENTATION
+IMPLEMENTATION --> EVALUATION
+%% EVALUATION --> TEST
+
+%% Style Yes branches
+linkStyle default stroke:#333,stroke-width:2px, color:black
+linkStyle 2,5,7,10,12,14,20,21,22,23,25,26,27,36,38,43 stroke:#000,stroke-width:2px,color:black
+
+
+click A3a href "https://teledyne.service-now.com/tdysp?id=sc_cat_item_guide&sys_id=ee3bca7c1b1477002f2bed7dee4bcbe4" _blank
+
+

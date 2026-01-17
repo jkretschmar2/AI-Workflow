@@ -1,0 +1,26 @@
+%%{init: {'flowchart': {'htmlLabels': false, 'wrap': false}, 'theme': 'base'}}%%
+flowchart TD
+
+subgraph SUBPROCESS["**2.1. AI Board Review**"]
+    direction TB
+    START[/"Input: Application Request"/]
+    START --> S1("Collect Business Interest from Multiple Units")
+    S1 --> S2("Review Strategic Alignment")
+    S2 --> S3("Assess Enterprise-Wide Value")
+    S3 --> S4("Evaluate Resource Requirements")
+    S4 --> S5{"Is there multi-business interest?"}
+    S5 -->|Yes| S6["Document Multi-Business Interest"]
+    S5 -->|No| S7["Document Single Business Interest"]
+    S6 --> S8("AI Board Discussion and Vote")
+    S7 --> S8
+    S8 --> END[/"Output: AI Board Decision"/]
+end
+
+%% Styling
+classDef interestStyle fill:#1B9B8E,stroke:#333,stroke-width:2px,color:#fff
+classDef interestDecision fill:#5CC9BD,stroke:#333,stroke-width:2px,color:#000
+
+class START,S1,S2,S3,S4,S6,S7,S8,END interestStyle
+class S5 interestDecision
+
+linkStyle default stroke:#333,stroke-width:2px

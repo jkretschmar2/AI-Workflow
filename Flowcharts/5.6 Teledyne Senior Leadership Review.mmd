@@ -1,0 +1,30 @@
+%%{init: {'flowchart': {'htmlLabels': false, 'wrap': false}, 'theme': 'base'}}%%
+flowchart TD
+
+subgraph SUBPROCESS["**5.6. Teledyne Senior Leadership Review**"]
+    direction TB
+    START[/"Input: Business Case with Approvals"/]
+    START --> S1("Review Business Case & ROI Analysis")
+    S1 --> S2("Assess Strategic Alignment with Corporate Goals")
+    S2 --> S3("Evaluate Enterprise-Wide Investment")
+    S3 --> S4("Review Risk & Opportunity Assessment")
+    S4 --> S5("Consider Competitive Positioning")
+    S5 --> S6{"Does Senior Leadership approve?"}
+    S6 -->|Yes| S7["Enterprise Deployment Authorized"]
+    S6 -->|No| S8["Request Business Case Revision"]
+    S8 --> S9{"Can business case be strengthened?"}
+    S9 -->|Yes| S1
+    S9 -->|No| S10(["Enterprise Deployment Denied"])
+    S7 --> END[/"Output: Leadership Decision"/]
+end
+
+%% Styling
+classDef formalStyle fill:#945491,stroke:#333,stroke-width:2px,color:#fff
+classDef formalDecision fill:#B57FB1,stroke:#333,stroke-width:2px,color:#fff
+classDef exitStyle fill:#FF7F7F,stroke:#333,stroke-width:2px,color:#000
+
+class START,S1,S2,S3,S4,S5,S7,S8,END formalStyle
+class S6,S9 formalDecision
+class S10 exitStyle
+
+linkStyle default stroke:#333,stroke-width:2px
